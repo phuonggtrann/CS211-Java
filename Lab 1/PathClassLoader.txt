@@ -1,0 +1,874 @@
+23 Jan 2019 23:30:57 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:30:57 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:30:57 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:30:59 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:30:59 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:30:59 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:30:59 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:30:59 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:30:59 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:30:59 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:30:59 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:30:59 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:30:59 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:30:59 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:30:59 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:30:59 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:30:59 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:30:59 GMT: PathClassLoader.findClass(HelloLab) called
+23 Jan 2019 23:30:59 GMT: findResource(HelloLab.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:04 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:32:04 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:32:04 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:32:07 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:32:07 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:32:07 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:32:07 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:32:07 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:32:07 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:32:07 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:32:07 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:32:07 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:32:07 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:32:07 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:32:07 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:32:07 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:32:07 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:32:07 GMT: PathClassLoader.findClass(HelloLab) called
+23 Jan 2019 23:32:07 GMT: findResource(HelloLab.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:48 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:35:48 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:35:48 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:35:49 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:35:49 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:35:49 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:35:49 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:35:49 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:35:49 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:35:49 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:35:49 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:35:49 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:35:49 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:35:49 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:35:49 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:35:49 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:35:49 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:35:49 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:35:49 GMT: findResource(CSWisdom.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:42:09 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:42:09 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:42:09 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:42:19 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:42:19 GMT: PathClassLoader.findClass(HelloLab) called
+23 Jan 2019 23:42:19 GMT: findResource(HelloLab.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:42:19 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:42:19 GMT: findResource(CSWisdom.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:42:19 GMT: PathClassLoader.findClass(E1tester) called
+23 Jan 2019 23:42:19 GMT: findResource(E1tester.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:44:57 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:44:57 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:44:57 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:45:03 GMT: findResource(edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:45:03 GMT: findResource(java/lang/edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:45:03 GMT: findResource(edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:45:03 GMT: findResource(edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:45:03 GMT: findResource(edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:45:03 GMT: findResource(java/lang/edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:45:03 GMT: findResource(edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:45:03 GMT: findResource(edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:45:03 GMT: findResource(edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:45:03 GMT: findResource(edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:45:03 GMT: findResource(edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:45:03 GMT: findResource(java/lang/edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:45:03 GMT: findResource(edu.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:45:03 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:03 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:45:03 GMT: findResource(CSWisdom.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:07 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:45:07 GMT: PathClassLoader.findClass(HelloLab) called
+23 Jan 2019 23:45:07 GMT: findResource(HelloLab.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:07 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:45:07 GMT: findResource(CSWisdom.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:45:07 GMT: PathClassLoader.findClass(E1tester) called
+23 Jan 2019 23:45:07 GMT: findResource(E1tester.class) called; _path is [, , , , , , , , , , , , , , , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:08 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:46:08 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:46:08 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:14 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:46:14 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:14 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:14 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:14 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:46:14 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:14 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:14 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:14 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:14 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:14 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:46:14 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:14 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:14 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(E1tester) called
+23 Jan 2019 23:46:14 GMT: findResource(E1tester.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:46:14 GMT: findResource(CSWisdom.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:14 GMT: PathClassLoader.findClass(HelloLab) called
+23 Jan 2019 23:46:14 GMT: findResource(HelloLab.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:15 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:46:15 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:46:15 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:46:21 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:21 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:21 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:46:21 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:21 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:21 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:21 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:21 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:21 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:21 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:21 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:21 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:21 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:21 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:21 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:21 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:21 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:21 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:22 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:46:22 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:22 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:22 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:22 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:22 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:22 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:46:22 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:22 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:22 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(E1tester) called
+23 Jan 2019 23:46:22 GMT: findResource(E1tester.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:46:22 GMT: findResource(CSWisdom.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:22 GMT: PathClassLoader.findClass(HelloLab) called
+23 Jan 2019 23:46:22 GMT: findResource(HelloLab.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:23 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:46:23 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:46:23 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:55 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:46:55 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:55 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:55 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:55 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:46:55 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:55 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:55 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:55 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:55 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:55 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:46:55 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:46:55 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:46:55 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:46:55 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:46:55 GMT: findResource(CSWisdom.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:47:01 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:47:01 GMT: PathClassLoader.findClass(HelloLab) called
+23 Jan 2019 23:47:01 GMT: findResource(HelloLab.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:47:01 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:47:01 GMT: findResource(CSWisdom.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:47:01 GMT: PathClassLoader.findClass(E1tester) called
+23 Jan 2019 23:47:01 GMT: findResource(E1tester.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:48:05 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:48:05 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:48:05 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:48:07 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:48:07 GMT: PathClassLoader.findClass(HelloLab) called
+23 Jan 2019 23:48:07 GMT: findResource(HelloLab.class) called; _path is [, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:48:07 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:48:07 GMT: findResource(CSWisdom.class) called; _path is [, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:48:07 GMT: PathClassLoader.findClass(E1tester) called
+23 Jan 2019 23:48:07 GMT: findResource(E1tester.class) called; _path is [, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:48:49 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:48:49 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:48:49 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:48:51 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:48:51 GMT: PathClassLoader.findClass(HelloLab) called
+23 Jan 2019 23:48:51 GMT: findResource(HelloLab.class) called; _path is [, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:48:51 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:48:51 GMT: findResource(CSWisdom.class) called; _path is [, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:48:51 GMT: PathClassLoader.findClass(E1tester) called
+23 Jan 2019 23:48:51 GMT: findResource(E1tester.class) called; _path is [, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:49:15 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:49:15 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:49:15 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:49:17 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:49:17 GMT: PathClassLoader.findClass(HelloLab) called
+23 Jan 2019 23:49:17 GMT: findResource(HelloLab.class) called; _path is [, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:49:17 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:49:17 GMT: findResource(CSWisdom.class) called; _path is [, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:49:17 GMT: PathClassLoader.findClass(E1tester) called
+23 Jan 2019 23:49:17 GMT: findResource(E1tester.class) called; _path is [, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:33 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:50:33 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:50:33 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:50:42 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:50:42 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:50:42 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:50:42 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:50:42 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:50:42 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:50:42 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:50:42 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:50:42 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:50:42 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:50:42 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(java.lang.edu) called
+23 Jan 2019 23:50:42 GMT: findResource(java/lang/edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu) called
+23 Jan 2019 23:50:42 GMT: findResource(edu.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(edu.rice.cs.drjava.model.compiler) called
+23 Jan 2019 23:50:42 GMT: findResource(edu/rice/cs/drjava/model/compiler.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:42 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:50:42 GMT: findResource(CSWisdom.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:54 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:50:54 GMT: PathClassLoader.findClass(HelloLab) called
+23 Jan 2019 23:50:54 GMT: findResource(HelloLab.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:54 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:50:54 GMT: findResource(CSWisdom.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:50:54 GMT: PathClassLoader.findClass(E1tester) called
+23 Jan 2019 23:50:54 GMT: findResource(E1tester.class) called; _path is [, , /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:53:10 GMT: Log 'PathClassLoader.txt' opened: 23 Jan 2019 23:53:10 GMT with name /Users/phuongtran/Desktop/GMU2021/CS211/PathClassLoader.txt
+23 Jan 2019 23:53:10 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:53:11 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]'
+23 Jan 2019 23:53:11 GMT: PathClassLoader.findClass(HelloLab) called
+23 Jan 2019 23:53:11 GMT: findResource(HelloLab.class) called; _path is [, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:53:11 GMT: PathClassLoader.findClass(CSWisdom) called
+23 Jan 2019 23:53:11 GMT: findResource(CSWisdom.class) called; _path is [, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
+23 Jan 2019 23:53:11 GMT: PathClassLoader.findClass(E1tester) called
+23 Jan 2019 23:53:11 GMT: findResource(E1tester.class) called; _path is [, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/GMU2021/CS211, /Users/phuongtran/Desktop/drjava-gmu.jar]
