@@ -27,3 +27,4 @@ public class Square extends Shape {
     // over riding 
     public double getArea() {return side*side;} // Make getArea() in parents return 0, delete argument
 }
+
