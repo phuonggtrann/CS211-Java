@@ -12,11 +12,17 @@ public class TranscriptEntry extends Course {
   private int year;
   private String grade;
   private boolean active;
+  private Course c;
   
   public TranscriptEntry(Course c, String semester, int year) {
     // TODO
     // note: active must be initialized to true.
-
+    super(c);
+    this.semester=semester;
+    this.year=year;
+    this.grade="";
+    this.active= true;
+    this.c=c;
   }     
   
 /**

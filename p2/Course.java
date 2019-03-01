@@ -24,7 +24,7 @@ public class Course {
     this.title=title;
     this.credits=credits;
     this.code=code;
-    this.dept= new Registrar.getDeptName(this.code);
+    this.dept=Registrar.getDeptName(this.code);
     }
 
 /**
@@ -38,13 +38,13 @@ public class Course {
     //public String getTitle(){return this.tittle}
     //public void setTitle(String title) {this.title=title}
     
-    public int getCredits() {return credit;}
+    public int getCredits() {return credits;}
     public Course setCredits(int credits) {
       this.credits=credits;
       return this;
     }
 
-    public String getCode() {return Code;}
+    public String getCode() {return code;}
     public Course setCode(String code) {
       this.code=code;
       return this;

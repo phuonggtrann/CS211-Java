@@ -28,12 +28,7 @@ public class Registrar {
   // TODO.
   // note: maximum number of students is 100, and maximum number of courses is 50.
   //
-  this.students= new Students[100];
-  this.numStudents=100;
-  this.courseCatalog= new Course[50];
-  this.numCourses=50;
-  this.Semester=semester;
-  this.year=year;
+  
  }
 
 /**
