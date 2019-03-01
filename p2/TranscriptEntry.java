@@ -17,7 +17,7 @@ public class TranscriptEntry extends Course {
   public TranscriptEntry(Course c, String semester, int year) {
     // TODO
     // note: active must be initialized to true.
-    super(c);
+    super(c.getCode(),c.getTitle(), c.getCredits());
     this.semester=semester;
     this.year=year;
     this.grade="";
@@ -42,6 +42,7 @@ public class TranscriptEntry extends Course {
   
   public boolean isActive() {
    //TODO
+   return this.active;
   }
  
   
@@ -50,5 +51,6 @@ public class TranscriptEntry extends Course {
    // return a string with the following format:
    //  "\tINFS 510 Database Systems,   credits: 3, GRADE: A" 
    //TODO
+   return String.format("\t%s %s %s,   credits: %d, GRADE: %d", c.getCode(),c.getTitle(),c.getDept(),c.getCredits(), this.grade);
  }
 }

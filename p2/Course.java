@@ -52,7 +52,7 @@ public class Course {
 
     public String getDept() {return dept;}
     public Course setDept(String code) {
-      this.dept = new Registrar.getDeptName(code);
+      this.dept = Registrar.getDeptName(code);
       return this;
     }
 /**
