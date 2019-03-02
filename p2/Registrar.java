@@ -28,8 +28,6 @@ public class Registrar {
   // TODO.
   // note: maximum number of students is 100, and maximum number of courses is 50.
   //
-
-  
  }
 
 /**

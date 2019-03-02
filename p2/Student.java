@@ -99,7 +99,7 @@ public abstract class Student {
  @Override
  public String toString() {
    // return a string with the following format:
-   //  ï¿½Smith, John (G#0000000000)ï¿½ 
+   //  “Smith, John (G#0000000000)” 
    //TODO
  }
 
