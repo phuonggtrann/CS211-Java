@@ -30,8 +30,7 @@ public abstract class Student {
  * note how the class is defining its instance variables as protected so 
  * that they are accessible to its sub-classes.
  */
- public Student(int level, String first, String last, long gnum, String major, 
-                String degree) {
+ public Student(int level, String first, String last, long gnum, String major, String degree) {
   // TODO initialize the instance variables
   //  Also use the parameter variable "level" as follows
   //     1) use its value to initialized the PROGRAM constant
@@ -39,7 +38,16 @@ public abstract class Student {
   //        or to be of size [15] if level is 1.  
   // note that level refers to the student type and we use a value of 0 for 
   // an undergrad and a value of 1 for a grad
-   
+  this.first=first;
+  this.last=last;
+  this.gnum=gnum;
+  this.major=major;
+  this.degree=degree;
+  this.PROGRAM=level;
+  if (level==0) {
+    this.transcripts=new Transcript[50];}
+  if (level==1) {
+    this.transcripts=new Transcript[15];}
  }
 
  /**
@@ -99,7 +107,7 @@ public abstract class Student {
  @Override
  public String toString() {
    // return a string with the following format:
-   //  “Smith, John (G#0000000000)” 
+   //  ï¿½Smith, John (G#0000000000)ï¿½ 
    //TODO
  }
 
