@@ -27,7 +27,18 @@ public class Registrar {
  public Registrar(String semester, int year) {
   // TODO.
   // note: maximum number of students is 100, and maximum number of courses is 50.
-  //
+  this.semester=semester;
+  this.year=year;
+  if (numStudents>100) {
+    this.students= new Student[100];}
+  else {
+    this.students= new Student[numStudents];}
+  if (numCourses>50) {
+    this.courseCatalog=new Course[50];
+  }
+  else {
+    this.courseCatalog= new Course[numCourses];
+  }
  }
 
 /**
@@ -38,6 +49,13 @@ public class Registrar {
  
  public void setYear(int year) { this.year=year;}
  public int getYear() { return year; }
+
+ // self-made
+ public void setStudents(int numStudents) { this.students = new Student[numStudents];}
+ public Student[] getStudents() { return this.students; }
+
+ public void setCourseCatalog(int numCourse) { this.courseCatalog = new Course[numCourse];}
+
  
 /**
  * Public methods.
@@ -45,6 +63,16 @@ public class Registrar {
  public boolean addCourse(String code, String title, int hours) { 
  // if courseCatalog is full , return false, otherwise, add course to the catalog.
  // TODO
+  if (this.courseCatalog.length>=50) {return false;}
+  else {
+    Course[] temp = new Course[this.courseCatalog.length];
+    for (int a=0; a<this.courseCatalog.length;a++) {
+      temp[a]=this.courseCatalog[a];
+    }  
+    temp[temp.length-1]=new Course(code,title,hours);
+    this.courseCatalog=temp;
+    return true;
+  }
   }
  
  public String getCourseCatalog() {
@@ -60,12 +88,32 @@ public class Registrar {
  // if the students array is full, return false.
  // otherwise add the student information to the students arrays
  // TODO
+  if (this.students.length>=100) {return false;}
+  else {
+    Student[] temp = new Student[this.students.length];
+    for (int a=0; a<this.students.length; a++) {
+      temp[a]=this.students[a];
+    }
+    temp[temp.length-1]=new Undergraduate(fname, lname, gnum, major, degree, highSchool);
+    this.students=temp;
+    return true;
+    }
   }
  
   public boolean addStudent(String fname, String lname, long gnum, String major, 
                             String degree, String uMajor, String uInstit) {  
     // an overloaded method which does the sam as the other addStudent method
     // TODO
+    if (this.students.length>=100) {return false;}
+  else {
+    Student[] temp = new Student[this.students.length];
+    for (int a=0; a<this.students.length; a++) {
+      temp[a]=this.students[a];
+    }
+    temp[temp.length-1]=new Graduate(fname, lname, gnum, major, degree, uMajor, uInstit);
+    this.students=temp;
+    return true;
+    }
   }
  
   public boolean register(long gnum, String courseCode) {
@@ -75,13 +123,30 @@ public class Registrar {
     // return false.
     // otherwise register the student in the class and return true.
     // TODO
+    for (Course c : this.courseCatalog){
+      if (c.getCode().equals(courseCode)) {
+        for (Student s : this.students) {
+          if (s.getGnum()==gnum) {
+            return true;
+          }
+        } /// didn't register student to class 
+      }
+    }
+    return false;
   }
   
   public boolean drop(long gnum, String courseCode) {
     // Find the student object in the students array using their gnum, if no student is found 
     // return false.  otherwise drop the course for the student.
     // TODO
+    for (Student s : this.students) {
+      if (s.getGnum()==gnum) {
+        s.dropAClass(courseCode);
+        return true;
+      }
   }
+    return false;
+}
   
   public boolean postGrade(long gnum, String courseCode, int score) {
     // Find the student object in the students array using their gnum, if no student is found 
@@ -121,7 +186,12 @@ public class Registrar {
  * Private methods.
  * you will need few helper methods.
  */ 
-
-  
-  
+  public Student findStudent(long gnum){
+    for (Student a: this.students) {
+      if (a.getGnum()==gnum) {
+        return a;
+      }
+    }
+    return null;
+  }
 }

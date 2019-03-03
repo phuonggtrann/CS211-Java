@@ -15,15 +15,16 @@ public class Undergraduate extends Student {
  public Undergraduate(String first, String last, long gnum, 
                       String major, String degree, String highSchool) {
    // TODO
+   super(0, first, last, gnum, major, degree);
+   this.highSchool=highSchool;
  }
- 
 
  /**
  * Accessor methods.
  */
  // TODO
-
-
+ public String getHighSchool() {return this.highSchool;}
+ public void setHighSchool(String highSchool) {this.highSchool=highSchool;}
 
  /**
  * The two abstract methods from parent class.
@@ -33,6 +34,8 @@ public class Undergraduate extends Student {
     * registered to 2 courses (6.0 credits) of his major in the current semester.
     */
    // TODO
+   
+
  }
     
   protected void setCourseGrade(TranscriptEntry entry, int score) {
@@ -55,7 +58,7 @@ public class Undergraduate extends Student {
  @Override
  public String toString() {
   // overrides the toString() method defined in its parent class, returns a String in the following format: 
-  //                 ìJohn Smith, Degree: B.S., Major: Computer Scienceî
+  //                 ‚ÄúSmith, John (G#0000000000), Degree: B.S., Major: Computer Science‚Äù
   // TODO
 
  }

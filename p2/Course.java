@@ -43,19 +43,19 @@ public int getCredits() {return this.credits;}
 public void setCredits(int credits) {this.credits=credits;}
 
 public String getDept() {return this.dept;}
-public void setDept(int code) {this.dept=Registar.getDeptName(code);}
+public void setDept(String code) {this.dept=Registrar.getDeptName(code);}
 
  @Override
  public String toString() { 
    // TODO: implement so that a string is returned in the following format:
-   //  "\tINFS 612 Communication Systems (3)�
-   return String.format("\t%s %s", this.code, this.title);
+   //  "INFS 612 Communication Systems (3)�
+   return String.format("%s %s", this.code, this.title);
    }
  
  public String fullString() {
    // TODO: implement so that a string is returned in the following format:  
-   //"\tINFS 612 Communication Systems (3) credit hours�
-   return String.format("\t%s %s (%d) credit hours", this.code, this.title, this.credits);
+   //"INFS 612 Communication Systems (3) credit hours�
+   return String.format("%s %s, (%d) credit hours.", this.code, this.title, this.credits);
  }
 
 }

@@ -54,9 +54,10 @@ public void setGrade(String grade) {this.grade=grade;}
   
   public boolean isActive() {
    //TODO
-   if (this.grade.euqals("")) {
-     this.active=false;
+   if (this.grade.equals("")) {
+     this.active=true;
    }
+   else {this.active=false;}
    return this.active;
   }
  
@@ -64,8 +65,11 @@ public void setGrade(String grade) {this.grade=grade;}
  @Override
  public String toString() { 
    // return a string with the following format:
-   //  "\tINFS 510 Database Systems,   credits: 3, GRADE: A" 
+   //  "\tINFS 510 Database Systems,   credits: 3, GRADE: A" (for students have assigned grade)
+   //  "\tINFS 510 Database Systems,   credits: 3" (for student who doesnt have an assigned grade)
    //TODO
-   return String.format("\t%s %s,   credits: %d, GRADE: %s", super.getCode(),super.getTitle(),super.getCredits(),this.grade);
+   if (this.grade.equals("")) {return String.format("\t%s %s,   credits: %d", super.getCode(),super.getTitle(),super.getCredits());}
+   else {
+   return String.format("\t%s %s,   credits: %d, GRADE: %s", super.getCode(),super.getTitle(),super.getCredits(),this.grade); }
  }
 }

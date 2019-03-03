@@ -45,17 +45,39 @@ public abstract class Student {
   this.degree=degree;
   this.PROGRAM=level;
   if (level==0) {
-    this.transcripts=new Transcript[50];}
+    this.transcripts=new TranscriptEntry[50];} // Undergrad
   if (level==1) {
-    this.transcripts=new Transcript[15];}
+    this.transcripts=new TranscriptEntry[15];} // Grad
  }
 
  /**
  * Accessor methods.
  */
 // TODO: define a setter and a getter method for each of the instance variables
- 
- 
+public String getFirst() {return this.first;}
+public void setFirst(String first) {this.first=first;}
+
+public String getLast() {return this.last;}
+public void setLast(String last) {this.last=last;}
+
+public int getProgram() {return this.PROGRAM;}
+// final instance doesn't have setter
+
+public long getGnum() {return this.gnum;}
+public void setGnum(long gnum) {this.gnum=gnum;}
+
+public String getMajor() {return this.major;}
+public void setMajor(String major) {this.major=major;}
+
+public String getDegree() {return this.degree;}
+public void setDegree(String degree) {this.degree=degree;}
+
+public TranscriptEntry[] getTranscripts() {return this.transcripts;}
+public void setTranscipts(int level) {
+  if (level==0) {this.transcripts=new TranscriptEntry[50];}
+  else {this.transcripts=new TranscriptEntry[15];}
+}
+
  /**
  * Public methods.
  */
@@ -66,7 +88,7 @@ public abstract class Student {
    // in the current semester and will return false if thats the case.
    // hint: a student would be currently enrolled if the .isActive() method returned true.
    // 
-  
+   
  }
    
    
@@ -109,15 +131,15 @@ public abstract class Student {
    // return a string with the following format:
    //  �Smith, John (G#0000000000)� 
    //TODO
+   return String.format("%s, %s (G#%s", this.last,this.first,this.gnum);
  }
 
- 
 /**
  * Private methods.
  * you may add as much helper methods as you need. 
  * 
  */
  
-  protected abstract boolean approvedForClass(Course c, String semester, int year); 
+  protected abstract boolean approvedForClass(Course c); 
   protected abstract void setCourseGrade(TranscriptEntry entry, int score);
 }
