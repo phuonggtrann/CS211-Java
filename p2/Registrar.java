@@ -154,9 +154,13 @@ public class Registrar {
     // TODO
     for (Student s: students) {
       if (s.getGnum()==gnum) {
-        
+        for (TranscriptEntry t: s.getTranscripts()) {
+          if (t.getCode()==courseCode) {s.setCourseGrade(t, score);}
+          return true;
+        }
       }
     }
+    return false;
   }
   
   
