@@ -22,13 +22,35 @@ public class Graduate extends Student {
     @Override public String toString() {
         return super.toString();
     }
- *
- *      protected boolean approvedForClass(Course c) 
- *       // A GraduateStudent can only register to a course if either it belongs to the program he majors in,
- *       // for example if the student majors in Physics, then the course's program must be physics
- * 
- *      protected void setCourseGrade(TranscriptEntry entry, int score) 
- *       // no plus/minus ,, and no D option for a graduate **/
+ 
+    protected boolean approvedForClass(Course c) {
+    // A GraduateStudent can only register to a course if either it belongs to the program he majors in,
+    // for example if the student majors in Physics, then the course's program must be physics
+    for (TranscriptEntry t:this.getTranscripts()) {
+        if (c.getDept().equals(getMajor())) {return true;}
+       }
+    return false;
+    }
+
+    protected void setCourseGrade(TranscriptEntry entry, int score) {
+        // no plus/minus ,, and no D option for a graduate **/
+        // if (score >= 98) then the grade is A, 
+        if (score>=90) {
+            entry.setGrade("A");
+        } 
+        // if (80=<score<90) then the grade is B, 
+        if (score>=80 && score<90) {
+            entry.setGrade("B");
+        } 
+        // if (70=<score<80) then the grade is C, 
+        if (score>=70 && score<80) {
+            entry.setGrade("C");
+        } 
+        // if (score < 70) then the grade is F, 
+        if (score<70) {
+            entry.setGrade("C");
+        } 
+    }
 }
 
 
