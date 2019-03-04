@@ -152,6 +152,11 @@ public class Registrar {
     // Find the student object in the students array using their gnum, if no student is found 
     // return false.  otherwise post a course grade for the student.
     // TODO
+    for (Student s: students) {
+      if (s.getGnum()==gnum) {
+        
+      }
+    }
   }
   
   

@@ -124,6 +124,11 @@ public void setTranscipts(int level) {
  public boolean equals(Object o) {
    // two student onjects are equal if they have the same G#
    // TODO
+   if (o instanceof Student) {
+     Student a = (Student) o;
+     if (this.gnum==a.getGnum()) {return true;}
+   }
+   return false;
  }
  
  @Override
