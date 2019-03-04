@@ -34,8 +34,19 @@ public class Undergraduate extends Student {
     * registered to 2 courses (6.0 credits) of his major in the current semester.
     */
    // TODO
-
-
+   int creditCount=0;
+   for (TranscriptEntry t:this.getTranscripts()) {
+     if (c.getDept().equals(getMajor())) {return true;}
+     if (t.getC().equals(c)) {
+       if (t.isActive()) {
+         creditCount+=t.getCredits();
+        }
+      }
+   }
+   if (creditCount>=6) {
+     return true;
+    }
+   return false;
  }
     
   protected void setCourseGrade(TranscriptEntry entry, int score) {
