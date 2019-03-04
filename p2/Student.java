@@ -84,11 +84,16 @@ public void setTranscipts(int level) {
   public boolean registerAClass(Course c, String semester, int year) { 
    // this method will call the approvedForClass method defined by 
    // the subclasses before enrolling the student into the course.
-   //  This method also checks if the studnet is already enrolled in 
+   //  This method also checks if the student is already enrolled in 
    // in the current semester and will return false if thats the case.
    // hint: a student would be currently enrolled if the .isActive() method returned true.
-   // 
-   
+    if (approvedForClass(c)) {
+      for (TranscriptEntry t: transcripts) {
+        if (t.equals(c) && t.isActive()) {return false;} 
+      }
+      return true; 
+    }
+    else {return false;}
  }
    
    
@@ -98,6 +103,15 @@ public void setTranscipts(int level) {
   // replace it with a null value, shift array elementsleft-ward to replace it!
   // hint: create a new array when removing a course from the transcripts array
        //TODO
+    for (int a=0; a<transcripts.length; a++) {
+      if ((transcripts[a].getCode().equals(courseCode)) && transcripts[a].isActive()) {
+        for (int b=a; b<transcripts.length-1; b++) {
+          transcripts[b]=transcripts[b+1];
+        }
+        return true;
+      }
+    }
+    return false;
   }
 
    
@@ -106,7 +120,15 @@ public void setTranscipts(int level) {
    // then assigne a letter grade for the student in that course.  if the course is not found 
    // in the array, or if its a past course then return false (should overwrite a past course grade).
       //TODO
-
+      for (TranscriptEntry t: transcripts) {
+        if (t.getCode().equals(courseCode)) {
+          if (t.isActive()) {
+            setCourseGrade(t, score);
+            return true;
+          }
+        }
+      }
+      return false;
  }
 
   public String getClassList(String semester, int year) {
