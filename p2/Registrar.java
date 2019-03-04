@@ -4,7 +4,7 @@
  *     - maintains the course catalog.
  *     - registers and drop courses for students
  *     - at the end of semester, post grades
- *     
+ * // merge conflict    
  * @author CS211 GMU
  */
 import java.util.Scanner;
