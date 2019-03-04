@@ -65,7 +65,7 @@ public class Registrar {
  // TODO
   if (this.courseCatalog.length>=50) {return false;}
   else {
-    Course[] temp = new Course[this.courseCatalog.length];
+    Course[] temp = new Course[this.courseCatalog.length+1];
     for (int a=0; a<this.courseCatalog.length;a++) {
       temp[a]=this.courseCatalog[a];
     }  
@@ -90,7 +90,7 @@ public class Registrar {
  // TODO
   if (this.students.length>=100) {return false;}
   else {
-    Student[] temp = new Student[this.students.length];
+    Student[] temp = new Student[this.students.length+1];
     for (int a=0; a<this.students.length; a++) {
       temp[a]=this.students[a];
     }
@@ -106,7 +106,7 @@ public class Registrar {
     // TODO
     if (this.students.length>=100) {return false;}
   else {
-    Student[] temp = new Student[this.students.length];
+    Student[] temp = new Student[this.students.length+1];
     for (int a=0; a<this.students.length; a++) {
       temp[a]=this.students[a];
     }

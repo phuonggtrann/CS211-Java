@@ -103,15 +103,16 @@ public void setTranscipts(int level) {
   // replace it with a null value, shift array elementsleft-ward to replace it!
   // hint: create a new array when removing a course from the transcripts array
        //TODO
+    boolean canDrop=false;
     for (int a=0; a<transcripts.length; a++) {
-      if ((transcripts[a].getCode().equals(courseCode)) && transcripts[a].isActive()) {
+      if ((transcripts[a].getCode().equals(courseCode)) && transcripts[a].getGrade().equals("")) {
+        canDrop=true;
         for (int b=a; b<transcripts.length-1; b++) {
           transcripts[b]=transcripts[b+1];
         }
-        return true;
       }
     }
-    return false;
+    return canDrop;
   }
 
    
