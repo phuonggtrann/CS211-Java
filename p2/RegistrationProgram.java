@@ -97,7 +97,7 @@ public class RegistrationProgram {
    System.out.println(regSystem.register(12345666L, "PHYS 101"));  // this will fail: false 
    System.out.println(regSystem.register(12345666L, "MATH 210"));  // true
    System.out.println(regSystem.register(12345666L, "INFS 201"));  // true
-   System.out.println(regSystem.register(12345666L, "PHYS 101"));  // false
+   System.out.println(regSystem.register(12345666L, "PHYS 101"));  // true
    System.out.println(regSystem.register(12345666L, "CS 212"));  // true 
    System.out.println(regSystem.getProgress(12345666L, "Fall", 2018));
    System.out.println(regSystem.getProgress(12345666L, "Spring", 2019)); 

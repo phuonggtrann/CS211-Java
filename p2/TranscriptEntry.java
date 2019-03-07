@@ -54,7 +54,7 @@ public void setGrade(String grade) {this.grade=grade;}
   
   public boolean isActive() {
    //TODO
-   if (this.grade.equals("")) {
+   if (getGrade().equals("")) {
      this.active=true;
    }
    else {this.active=false;}

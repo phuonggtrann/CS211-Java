@@ -1,4 +1,4 @@
-/**
+/*
  * A class which maintains basic information about an academic course. 
  * @author CS211 GMU
  */

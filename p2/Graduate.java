@@ -48,7 +48,7 @@ public class Graduate extends Student {
         } 
         // if (score < 70) then the grade is F, 
         if (score<70) {
-            entry.setGrade("C");
+            entry.setGrade("F");
         } 
     }
 }
