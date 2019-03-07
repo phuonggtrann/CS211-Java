@@ -88,6 +88,7 @@ public class Registrar {
  // if the students array is full, return false.
  // otherwise add the student information to the students arrays
  // TODO
+ //check 
   if (this.students.length>=100) {return false;}
   else {
     Student[] temp = new Student[this.students.length+1];

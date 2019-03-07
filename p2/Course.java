@@ -8,8 +8,8 @@ public class Course {
 /**
  * Attributes.
  */
-  private String code;
-  private String title;
+  private String code; //this refer to the course code: MATh 101, PHYS 101
+  private String title; //this refer to full title of the course: Linear Algrebra, Univeristy Physics
   private String dept; // name of department offering the course
   private int credits;
 
@@ -43,7 +43,8 @@ public int getCredits() {return this.credits;}
 public void setCredits(int credits) {this.credits=credits;}
 
 public String getDept() {return this.dept;}
-public void setDept(String code) {this.dept=Registrar.getDeptName(code);}
+public void setDept(String dept) {this.dept=dept;}
+//public void setDept(String code) {this.dept=Registrar.getDeptName(code);}
 
  @Override
  public String toString() { 
