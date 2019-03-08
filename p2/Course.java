@@ -43,8 +43,7 @@ public int getCredits() {return this.credits;}
 public void setCredits(int credits) {this.credits=credits;}
 
 public String getDept() {return this.dept;}
-public void setDept(String dept) {this.dept=dept;}
-//public void setDept(String code) {this.dept=Registrar.getDeptName(code);}
+public void setDept(String code) {this.dept=Registrar.getDeptName(code);}
 
  @Override
  public String toString() { 

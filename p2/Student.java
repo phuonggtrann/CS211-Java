@@ -89,7 +89,7 @@ public void setTranscipts(int level) {
    // hint: a student would be currently enrolled if the .isActive() method returned true.
     if (approvedForClass(c)) {
       for (TranscriptEntry t: this.transcripts) {
-        if (t.getCode().equals(c.getCode()) && t.isActive()) {return false;} 
+        if (t.equals(c) && t.isActive()) {return false;} 
       }
       return true; 
     }
