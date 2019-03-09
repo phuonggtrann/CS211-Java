@@ -200,7 +200,8 @@ public class Registrar {
     for (Student s : students) {
       if (s.getGnum() == gnum) {
         for (TranscriptEntry t : s.getTranscripts()) {
-          if (t.getCode().equals(courseCode)) {
+          if (t==null) {continue;}
+          else if (t.getCode().equals(courseCode)) {
             if (s.obtainAGrade(t.getCode(), score)) {
               return true;
             } else {

@@ -124,7 +124,8 @@ public abstract class Student {
     boolean canAdd=false;
     if (approvedForClass(c)) {
       for (TranscriptEntry t: this.transcripts) {
-        if (t.equals(c)) {
+        if (t==null) {continue;}
+        else if (t.equals(c)) {
           if (t.isActive()) {
             canAdd=false;
             break; } // is doing that course rn
@@ -137,7 +138,8 @@ public abstract class Student {
     if (canAdd) {
       TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length+1];
       for (int i=0; i<this.transcripts.length; i++) {
-        temp[i] = this.transcripts[i];
+        if (this.transcripts[i]==null) {continue;}
+        else { temp[i] = this.transcripts[i]; }
       }
       // Register course and return true
       temp[temp.length-1] = new TranscriptEntry(c, semester, year);
@@ -157,7 +159,8 @@ public abstract class Student {
     boolean canDrop=false;
     TranscriptEntry classDrop=null;
     for (TranscriptEntry t: this.transcripts) { 
-      if ((t.getCode()).equals(courseCode)) { 
+      if (t==null) {continue;}
+      else if ((t.getCode()).equals(courseCode)) { 
         if (t.getGrade().equals("")) { // If grade isn't posted
           canDrop = true; 
           classDrop=t;
@@ -170,7 +173,7 @@ public abstract class Student {
       TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length]; 
       int a = 0;
       for (int x=0; x<this.transcripts.length; x++) {
-        if (this.transcripts[x].equals(classDrop)) {continue;}
+        if (this.transcripts[x]==null || this.transcripts[x].equals(classDrop)) {continue;}
         else {
           temp[a]=this.transcripts[x];
           a++;
@@ -189,7 +192,8 @@ public abstract class Student {
     // past course grade).
     // TODO
     for (TranscriptEntry t : this.transcripts) {
-      if (t.getCode().equals(courseCode)) {
+      if (t==null) {continue;}
+      else if (t.getCode().equals(courseCode)) {
         if (t.isActive()) {
           setCourseGrade(t, score);
           return true;
