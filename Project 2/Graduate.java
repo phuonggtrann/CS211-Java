@@ -27,8 +27,10 @@ public class Graduate extends Student {
     // A GraduateStudent can only register to a course if either it belongs to the program he majors in,
     // for example if the student majors in Physics, then the course's program must be physics
     for (TranscriptEntry t:this.getTranscripts()) {
-        if (c.getDept().equals(getMajor())) {return true;}
-       }
+        if (c.getDept().equals(super.getMajor())) {
+            return true;
+        }
+    }
     return false;
     }
 

@@ -87,24 +87,45 @@ public void setTranscipts(int level) {
    //  This method also checks if the student is already enrolled in 
    // in the current semester and will return false if thats the case.
    // hint: a student would be currently enrolled if the .isActive() method returned true.
-    if (approvedForClass(c)) {
-      for (TranscriptEntry t: this.transcripts) {
-        if (t.equals(c)) {
-          if (t.isActive()) {return false;} // is doing that course rn
-          else {return false;}  // enrolled in the same course
+//     if (approvedForClass(c)) {
+//       for (TranscriptEntry t: this.transcripts) {
+//         if (t.equals(c)) {
+//           if (t.isActive()) {return false;} // is doing that course rn
+//           else {return false;}  // enrolled in the same course
+//         }
+//       }
+//       TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length+1];
+//       for (int i=0; i<this.transcripts.length; i++) {
+//         temp[i] = this.transcripts[i];
+//       }
+//       // Register course and return true
+//       temp[temp.length-1] = new TranscriptEntry(c, semester, year);
+//       this.transcripts=temp;
+//       return true; 
+//     }
+//     else {return false;} // course not approved
+//  }
+boolean canAdd= true;
+  if (this.approvedForClass(c)) {
+    for (int i = 0; i < this.transcripts.length; i++) {
+      if (this.transcripts[i].equals(c) && this.transcripts[i].isActive()) {
+          canAdd=false;
+      }
+      else{
+        TranscriptEntry courseToAdd= new TranscriptEntry(c, semester, year);
+        if (this.transcripts[this.transcripts.length-1]!=null){
+          canAdd=false;
+        }
+        else {
+          this.transcripts[this.transcripts.length-1]=courseToAdd;
+          canAdd=true;
         }
       }
-      TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length+1];
-      for (int i=0; i<this.transcripts.length; i++) {
-        temp[i] = this.transcripts[i];
-      }
-      // Register course and return true
-      temp[temp.length-1] = new TranscriptEntry(c, semester, year);
-      this.transcripts=temp;
-      return true; 
     }
-    else {return false;} // course not approved
- }
+  }
+  else {canAdd=false;}
+  return canAdd;
+}
    
    
   public boolean dropAClass(String courseCode) {
@@ -112,8 +133,9 @@ public void setTranscipts(int level) {
   // Find the course entry in transcripts array and literally remove it, don't just
   // replace it with a null value, shift array elementsleft-ward to replace it!
   // hint: create a new array when removing a course from the transcripts array
-       //TODO
-    boolean canDrop=false;
+  //      TODO
+
+  /*  boolean canDrop=false;
     TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length];
     for (int a=0; a<this.transcripts.length; a++) {
       if ((this.transcripts[a].getCode()).equals(courseCode)) {
@@ -127,7 +149,7 @@ public void setTranscipts(int level) {
         }
       }
     }
-    // Creating new array to shift element
+    Creating new array to shift element
     int c=0;
     for (int b=0; b<temp.length; b++) {
       while (c<temp.length) {
@@ -143,8 +165,24 @@ public void setTranscipts(int level) {
     this.transcripts=temp;
     return canDrop; // if course is not in transcript
   }
+*/
+  boolean needToReplace = false;
+  int deletedIndex = 0;
+  for (int i = 0; i < this.transcripts.length; i++) {
+    if (this.transcripts[i].getCode().equals(courseCode) && this.transcripts[i].isActive()) {
+      this.transcripts[i] = null;
+      deletedIndex = i;
+      needToReplace = true;
+    }
+  }
+  if (needToReplace) {
+    for (int i = deletedIndex; i < this.transcripts.length; i++) {
+      this.transcripts[i] = this.transcripts[i + 1];
+    }
+  }
+  return needToReplace;
+}
 
-   
  public boolean obtainAGrade(String courseCode, int score) {     
    // this method will search the transcripts array to find a course and will
    // then assigne a letter grade for the student in that course.  if the course is not found 
@@ -158,7 +196,7 @@ public void setTranscipts(int level) {
               return true;
             }
             else {
-              //setCourseGrade(t, score);
+              setCourseGrade(t, score);
               return false;
             }
           }

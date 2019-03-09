@@ -89,7 +89,9 @@ public class Registrar {
  // otherwise add the student information to the students arrays
  // TODO
  //check 
-  if (this.students.length>=100) {return false;}
+  if (this.students.length>=100) {
+    return false;
+  }
   else {
     Student[] temp = new Student[this.students.length+1];
     for (int a=0; a<this.students.length; a++) {
@@ -106,15 +108,15 @@ public class Registrar {
     // an overloaded method which does the sam as the other addStudent method
     // TODO
     if (this.students.length>=100) {return false;}
-  else {
-    Student[] temp = new Student[this.students.length+1];
-    for (int a=0; a<this.students.length; a++) {
-      temp[a]=this.students[a];
-    }
-    temp[temp.length-1]=new Graduate(fname, lname, gnum, major, degree, uMajor, uInstit);
-    this.students=temp;
-    return true;
-    }
+    else {
+      Student[] temp = new Student[this.students.length+1];
+      for (int a=0; a<this.students.length; a++) {
+        temp[a]=this.students[a];
+      }
+      temp[temp.length-1]=new Graduate(fname, lname, gnum, major, degree, uMajor, uInstit);
+      this.students=temp;
+      return true;
+      }
   }
  
   public boolean register(long gnum, String courseCode) {
@@ -124,30 +126,42 @@ public class Registrar {
     // return false.
     // otherwise register the student in the class and return true.
     // TODO
+
     for (Course c : this.courseCatalog){
       if (c.getCode().equals(courseCode)) {
         for (Student s : this.students) {
           if (s.getGnum()==gnum) {
-            return true;
-          }
-        } /// didn't register student to class 
+            if (s.registerAClass(c, this.semester, this.year)) {
+              return true;
+            }
+            else {return false;}
+          } 
+        }
       }
     }
     return false;
   }
+        
+
   
   public boolean drop(long gnum, String courseCode) {
     // Find the student object in the students array using their gnum, if no student is found 
     // return false.  otherwise drop the course for the student.
     // TODO
     for (Student s : this.students) {
-      if (s.getGnum()==gnum) {
-        s.dropAClass(courseCode);
-        return true;
+      if (s.getGnum()==(gnum)) {
+        for (Course c: this.courseCatalog) {
+          if (c.getCode().equals(courseCode)) {
+            if (s.dropAClass(courseCode)) {
+              return true;
+            }
+            else {return false;}
+          }
+        }
       }
-  }
+    }
     return false;
-}
+  }
   
   public boolean postGrade(long gnum, String courseCode, int score) {
     // Find the student object in the students array using their gnum, if no student is found 
@@ -156,8 +170,12 @@ public class Registrar {
     for (Student s: students) {
       if (s.getGnum()==gnum) {
         for (TranscriptEntry t: s.getTranscripts()) {
-          if (t.getCode()==courseCode) {s.setCourseGrade(t, score);}
-          return true;
+          if (t.getCode()==courseCode) {
+             if (s.obtainAGrade(t.getCode(), score)) {
+              return true;
+             }
+             else {return false;}
+          }
         }
       }
     }

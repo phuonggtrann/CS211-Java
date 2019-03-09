@@ -57,7 +57,9 @@ public void setGrade(String grade) {this.grade=grade;}
    if (getGrade().equals("")) {
      this.active=true;
    }
-   else {this.active=false;}
+   else {
+     this.active=false;
+    }
    return this.active;
   }
  

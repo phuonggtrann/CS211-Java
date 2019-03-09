@@ -35,18 +35,21 @@ public class Undergraduate extends Student {
     */
    // TODO
    int creditCount=0;
+   boolean isApproved=true;
    for (TranscriptEntry t:this.getTranscripts()) {
-     if (c.getDept().equals(getMajor())) {return true;}
-     if (t.getC().equals(c)) {
-       if (t.isActive()) {
-         creditCount+=t.getCredits();
-        }
+     if (c.getDept().equals(super.getMajor()) && t.isActive()) {
+       creditCount+=t.getCredits();
       }
+    //  if (t.getC().equals(c)) {
+    //    if (t.isActive()) {
+    //      creditCount+=t.getCredits();
+    //     }
+    //   }
    }
-   if (creditCount>=6) {
-     return true;
+   if (creditCount<6 && c.getDept().equals(super.getMajor())) {
+     isApproved = false;
     }
-   return false;
+   return isApproved;
  }
     
   protected void setCourseGrade(TranscriptEntry entry, int score) {
