@@ -114,31 +114,34 @@ public void setTranscipts(int level) {
   // hint: create a new array when removing a course from the transcripts array
        //TODO
     boolean canDrop=false;
-    TranscriptEntry dropClass;
     TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length];
     for (int a=0; a<this.transcripts.length; a++) {
       if ((this.transcripts[a].getCode()).equals(courseCode)) {
         if (!(this.transcripts[a].getGrade().equals(""))) { // If grade is posted
           canDrop=false;
+          break;
         }
         else {
           canDrop=true;
-          dropClass=this.transcripts[a];
+          break;
         }
       }
+    }
+    // Creating new array to shift element
     int c=0;
     for (int b=0; b<temp.length; b++) {
-      while (c<this.temp.length) {
-        if (this.transcripts[b].equals(dropClass)) {
+      while (c<temp.length) {
+        if (this.transcripts[b].getCode().equals(courseCode)) {
           continue;
         }
         else {
-          temp[b]
+          temp[c]=this.transcripts[b];
+          c++;
         }
       }
     }
-    }
-    return false; // if course is not in transcript
+    this.transcripts=temp;
+    return canDrop; // if course is not in transcript
   }
 
    
