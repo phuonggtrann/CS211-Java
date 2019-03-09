@@ -89,11 +89,21 @@ public void setTranscipts(int level) {
    // hint: a student would be currently enrolled if the .isActive() method returned true.
     if (approvedForClass(c)) {
       for (TranscriptEntry t: this.transcripts) {
-        if (t.equals(c) && t.isActive()) {return false;} 
+        if (t.equals(c)) {
+          if (t.isActive()) {return false;} // is doing that course rn
+          else {return false;}  // enrolled in the same course
+        }
       }
+      TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length+1];
+      for (int i=0; i<this.transcripts.length; i++) {
+        temp[i] = this.transcripts[i];
+      }
+      // Register course and return true
+      temp[temp.length-1] = new TranscriptEntry(c, semester, year);
+      this.transcripts=temp;
       return true; 
     }
-    else {return false;}
+    else {return false;} // course not approved
  }
    
    
@@ -103,15 +113,32 @@ public void setTranscipts(int level) {
   // replace it with a null value, shift array elementsleft-ward to replace it!
   // hint: create a new array when removing a course from the transcripts array
        //TODO
+    boolean canDrop=false;
+    TranscriptEntry dropClass;
+    TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length];
     for (int a=0; a<this.transcripts.length; a++) {
-      if ((this.transcripts[a].getCode().equals(courseCode))) {
-        if (!(this.transcripts[a].getGrade().equals(""))) {
-          return false;
+      if ((this.transcripts[a].getCode()).equals(courseCode)) {
+        if (!(this.transcripts[a].getGrade().equals(""))) { // If grade is posted
+          canDrop=false;
         }
-        //else {return true;}
+        else {
+          canDrop=true;
+          dropClass=this.transcripts[a];
+        }
+      }
+    int c=0;
+    for (int b=0; b<temp.length; b++) {
+      while (c<this.temp.length) {
+        if (this.transcripts[b].equals(dropClass)) {
+          continue;
+        }
+        else {
+          temp[b]
+        }
       }
     }
-    return false;
+    }
+    return false; // if course is not in transcript
   }
 
    
