@@ -127,7 +127,7 @@ public abstract class Student {
     boolean canAdd = true;
     if (approvedForClass(c)) {
       for (TranscriptEntry t : this.transcripts) {
-        if (t.equals(c) && t.isActive()) {
+        if (t.getCode().equals(c.getCode()) && t.isActive()) {
           canAdd = false;
           break;
         } 
