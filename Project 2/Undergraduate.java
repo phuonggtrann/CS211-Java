@@ -40,15 +40,13 @@ public class Undergraduate extends Student {
      */
     // TODO
     int creditCount = 0;
-    if (c.getDept().equals(this.getMajor())) {
-      System.out.println("Approve for dept equal");
+    if (c.getDept().equals(this.getMajor())){
       return true;
     } else {
       for (TranscriptEntry t : this.getTranscripts()) {
         if (t.getDept().equals(this.getMajor()) && t.isActive()) {
           creditCount += t.getCredits();
         }
-        //if (t.getDept().equals(this.getMajor()) && !(t.isActive())
       }
     }
     if (creditCount >= 6) {

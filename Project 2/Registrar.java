@@ -159,7 +159,7 @@ public class Registrar {
     Student regStudent = null;
     boolean canRegister=false;
     for (Course c : this.courseCatalog) {
-      if (c.getCode().equals(courseCode)) {
+      if (c.getCode().equalsIgnoreCase(courseCode)) {
         crs=true;
         regCourse=c;
         break;

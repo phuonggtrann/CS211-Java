@@ -125,13 +125,10 @@ public abstract class Student {
     // hint: a student would be currently enrolled if the .isActive() method
     // returned true.
     boolean canAdd = true; 
-    System.out.println("outside");
     int count=0;
     if (approvedForClass(c)) {
-      System.out.println("passed1");
       for (TranscriptEntry t : this.transcripts) {
         if (t.getCode().equals(c.getCode())) {
-          System.out.println("passed2");
           count++;
           if (t.isActive()) {
             canAdd = false;
