@@ -128,7 +128,7 @@ public abstract class Student {
     int count=0;
     if (approvedForClass(c)) {
       for (TranscriptEntry t : this.transcripts) {
-        if (t.getCode().equals(c.getCode())) {
+        if (t.getCode().equalsIgnoreCase(c.getCode())) {
           count++;
           if (t.isActive()) {
             canAdd = false;
@@ -164,7 +164,7 @@ public abstract class Student {
     boolean canDrop = false;
     TranscriptEntry classDrop = null;
     for (TranscriptEntry t : this.transcripts) {
-      if ((t.getCode()).equals(courseCode) && t.isActive()) {
+      if ((t.getCode()).equalsIgnoreCase(courseCode) && t.isActive()) {
           canDrop = true;
           classDrop = t;
           break;
@@ -195,7 +195,7 @@ public abstract class Student {
     // TODO
     boolean obtainGrade=false;
     for (TranscriptEntry t : this.transcripts) {
-      if (t.getCode().equals(courseCode)) {
+      if (t.getCode().equalsIgnoreCase(courseCode)) {
         if (t.isActive()) { 
           obtainGrade=true;
           setCourseGrade(t, score); } 

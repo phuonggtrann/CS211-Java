@@ -193,7 +193,7 @@ public class Registrar {
     Student dropStudent = null;
     boolean canDrop=false;
     for (Course c : this.courseCatalog) {
-      if (c.getCode().equals(courseCode)) {
+      if (c.getCode().equalsIgnoreCase(courseCode)) {
         crs=true;
         dropCourse=c;
         break;
@@ -226,7 +226,7 @@ public class Registrar {
     Student gradeStudent = null;
     boolean canPostGrade=false;
     for (Course c : this.courseCatalog) {
-      if (c.getCode().equals(courseCode)) {
+      if (c.getCode().equalsIgnoreCase(courseCode)) {
         crs=true;
         gradeCourse=c;
         break;
