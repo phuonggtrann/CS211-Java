@@ -20,7 +20,7 @@ public class Graduate extends Student {
     public String getUndergraduateInstitution() {return this.undergraduateInstitution;}
 
     @Override public String toString() {
-        return super.toString();
+        return String.format("%s, %s (G#%s), Degree: %s, Major: %s ", this.last, this.first, this.gnum, this.degree, this.major);
     }
  
     protected boolean approvedForClass(Course c) {
