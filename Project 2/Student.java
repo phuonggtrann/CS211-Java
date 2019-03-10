@@ -194,7 +194,7 @@ public abstract class Student {
           obtainGrade=true;
           setCourseGrade(t, score); } 
         else {
-          setCourseGrade(t, score); 
+          //setCourseGrade(t, score); 
           obtainGrade=false; }
       }
     }

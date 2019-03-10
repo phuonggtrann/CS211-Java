@@ -72,6 +72,6 @@ public void setGrade(String grade) {this.grade=grade;}
    //TODO
    if (this.grade.equals("")) {return String.format("\t%s %s,   credits: %d", super.getCode(),super.getTitle(),super.getCredits());}
    else {
-   return String.format("\t%s %s,   credits: %d, GRADE: %s", super.getCode(),super.getTitle(),super.getCredits(),this.grade); }
+   return String.format("\t%s %s,   credits: %d, GRADE: %s", super.getCode(),super.getTitle(),super.getCredits(),this.getGrade()); }
  }
 }

@@ -111,7 +111,7 @@ public class Undergraduate extends Student {
     // in the following format:
     // “Smith, John (G#0000000000), Degree: B.S., Major: Computer Science”
     // TODO
-    return String.format("%s, %s (G#%s), Degree: %s, Major: %s ", this.last, this.first, this.gnum, this.degree,
+    return String.format("%s, %s (G#%s), Degree: %s, Major: %s", this.last, this.first, this.gnum, this.degree,
         this.major);
   }
 

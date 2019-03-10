@@ -20,7 +20,7 @@ public class Graduate extends Student {
     public String getUndergraduateInstitution() {return this.undergraduateInstitution;}
 
     @Override public String toString() {
-        return String.format("%s, %s (G#%s), Degree: %s, Major: %s ", this.last, this.first, this.gnum, this.degree, this.major);
+        return String.format("%s, %s (G#%s), Degree: %s, Major: %s", this.last, this.first, this.gnum, this.degree,this.major);
     }
  
     protected boolean approvedForClass(Course c) {
@@ -34,7 +34,7 @@ public class Graduate extends Student {
 
     protected void setCourseGrade(TranscriptEntry entry, int score) {
         // no plus/minus ,, and no D option for a graduate **/
-        // if (score >= 98) then the grade is A, 
+        // if (score >= 90) then the grade is A, 
         if (score>=90) {
             entry.setGrade("A");
         } 
