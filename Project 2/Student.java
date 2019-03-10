@@ -190,9 +190,12 @@ public abstract class Student {
     boolean obtainGrade=false;
     for (TranscriptEntry t : this.transcripts) {
       if (t.getCode().equals(courseCode)) {
-        setCourseGrade(t, score);
-        if (t.isActive()) { obtainGrade=true; } 
-        else { obtainGrade=false; }
+        if (t.isActive()) { 
+          obtainGrade=true;
+          setCourseGrade(t, score); } 
+        else {
+          setCourseGrade(t, score); 
+          obtainGrade=false; }
       }
     }
     return obtainGrade;
@@ -227,7 +230,7 @@ public abstract class Student {
     // return a string with the following format:
     // �Smith, John (G#0000000000)�
     // TODO
-    return String.format("%s, %s (G#%s", this.last, this.first, this.gnum);
+    return String.format("%s, %s (G#%s)", this.last, this.first, this.gnum);
   }
 
   /**
