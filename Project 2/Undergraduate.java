@@ -40,16 +40,16 @@ public class Undergraduate extends Student {
    }
    else {
     for (TranscriptEntry t:this.getTranscripts()) {
-      if (c.getDept().equals(super.getMajor()) ) {
-        creditCount+=t.getCredits();
+      if (t.equals(c)) {
+        if (t.isActive() && c.getDept().equals(super.getMajor())) {
+          creditCount+=t.getCredits();
         }
       }
-      if (creditCount>=6) {
-        return true;
-        }
-      else {return false;}
     }
+      if (creditCount>=6) {return true;}
+      else {return false;}
   }
+}
 
     
   protected void setCourseGrade(TranscriptEntry entry, int score) {

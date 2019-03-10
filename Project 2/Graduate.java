@@ -26,8 +26,10 @@ public class Graduate extends Student {
     protected boolean approvedForClass(Course c) {
     // A GraduateStudent can only register to a course if either it belongs to the program he majors in,
     // for example if the student majors in Physics, then the course's program must be physics
-        if (c.getDept().equals(super.getMajor())) {return true;}
-        else {return false;}
+        boolean isApproved=true;
+        if (c.getDept().equals(super.getMajor())) {isApproved=true;}
+        else {return isApproved=false;}
+        return isApproved;
     }
 
     protected void setCourseGrade(TranscriptEntry entry, int score) {
