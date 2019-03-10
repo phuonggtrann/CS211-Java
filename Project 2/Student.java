@@ -23,6 +23,8 @@ public abstract class Student {
   protected TranscriptEntry[] transcripts; // an array of objects
   protected final int PROGRAM; // a constant which will be initilized to 0 or 1
                                // in the constructor method
+  private int count;
+  private int max;
 
   /**
    * Attributes. note how the class is defining its instance variables as
@@ -42,12 +44,13 @@ public abstract class Student {
     this.major = major;
     this.degree = degree;
     this.PROGRAM = level;
+    this.transcripts = new TranscriptEntry[0];
+    this.count = 0;
     if (level == 0) {
-      this.transcripts = new TranscriptEntry[50];
-    } // Undergrad
-    if (level == 1) {
-      this.transcripts = new TranscriptEntry[15];
-    } // Grad
+      this.max = 50;
+    } else {
+      this.max = 15;
+    }
   }
 
   /**
@@ -121,67 +124,60 @@ public abstract class Student {
     // in the current semester and will return false if thats the case.
     // hint: a student would be currently enrolled if the .isActive() method
     // returned true.
-    boolean canAdd=false;
+    boolean canAdd = true;
     if (approvedForClass(c)) {
-      for (TranscriptEntry t: this.transcripts) {
-        if (t==null) {continue;}
-        else if (t.equals(c)) {
-          if (t.isActive()) {
-            canAdd=false;
-            break; } // is doing that course rn
-          else {
-            canAdd=true;
-            break; }
-        }
+      for (TranscriptEntry t : this.transcripts) {
+        if (t.equals(c) && t.isActive()) {
+          canAdd = false;
+          break;
+        } 
       }
+    } 
+    else {
+      canAdd = false;
     }
     if (canAdd) {
-      TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length+1];
-      for (int i=0; i<this.transcripts.length; i++) {
-        if (this.transcripts[i]==null) {continue;}
-        else { temp[i] = this.transcripts[i]; }
+      TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length + 1];
+      for (int z = 0; z < this.transcripts.length; z++) {
+        temp[z] = this.transcripts[z];
       }
-      // Register course and return true
-      temp[temp.length-1] = new TranscriptEntry(c, semester, year);
-      this.transcripts=temp;
+      TranscriptEntry add = new TranscriptEntry(c, semester, year);
+      temp[temp.length - 1] = add;
+      this.transcripts = temp;
     }
-    else {canAdd= false;} // course not approved
   return canAdd;
   }
 
+
   public boolean dropAClass(String courseCode) {
-    // We may only drop a student if he/she is currently enrolled (ie no grade
-    // posted yet).
-    // Find the course entry in transcripts array and literally remove it, don't
-    // just replace it with a null value, shift array elementsleft-ward to replace it!
-    // hint: create a new array when removing a course from the transcripts array
-    // TODO
-    boolean canDrop=false;
-    TranscriptEntry classDrop=null;
-    for (TranscriptEntry t: this.transcripts) { 
-      if (t==null) {continue;}
-      else if ((t.getCode()).equals(courseCode)) { 
-        if (t.getGrade().equals("")) { // If grade isn't posted
-          canDrop = true; 
-          classDrop=t;
+  // We may only drop a student if he/she is currently enrolled (ie no grade posted yet).
+  // Find the course entry in transcripts array and literally remove it, don't just
+  // replace it with a null value, shift array elementsleft-ward to replace it!
+  // hint: create a new array when removing a course from the transcripts array
+       //TODO
+    boolean canDrop = false;
+    TranscriptEntry classDrop = null;
+    for (TranscriptEntry t : this.transcripts) {
+      if ((t.getCode()).equals(courseCode) && t.isActive()) {
+          canDrop = true;
+          classDrop = t;
           break;
-        }
-        else {canDrop=false; break;}
       }
     }
     if (canDrop) {
-      TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length]; 
+      TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length];
       int a = 0;
-      for (int x=0; x<this.transcripts.length; x++) {
-        if (this.transcripts[x]==null || this.transcripts[x].equals(classDrop)) {continue;}
-        else {
-          temp[a]=this.transcripts[x];
+      for (int x = 0; x < this.transcripts.length; x++) {
+        if (this.transcripts[x].equals(classDrop)) {
+          continue;
+        } else {
+          temp[a] = this.transcripts[x];
           a++;
         }
       }
-      this.transcripts=temp;
+      this.transcripts = temp;
     }
-      return canDrop; // if course is not in transcript 
+    return canDrop;
   }
 
   public boolean obtainAGrade(String courseCode, int score) {
@@ -191,19 +187,15 @@ public abstract class Student {
     // in the array, or if its a past course then return false (should overwrite a
     // past course grade).
     // TODO
+    boolean obtainGrade=false;
     for (TranscriptEntry t : this.transcripts) {
-      if (t==null) {continue;}
-      else if (t.getCode().equals(courseCode)) {
-        if (t.isActive()) {
-          setCourseGrade(t, score);
-          return true;
-        } else {
-          setCourseGrade(t, score);
-          return false;
-        }
+      if (t.getCode().equals(courseCode)) {
+        setCourseGrade(t, score);
+        if (t.isActive()) { obtainGrade=true; } 
+        else { obtainGrade=false; }
       }
     }
-    return false;
+    return obtainGrade;
   }
 
   public String getClassList(String semester, int year) {

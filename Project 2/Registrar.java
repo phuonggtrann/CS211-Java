@@ -153,43 +153,66 @@ public class Registrar {
     // return false.
     // otherwise register the student in the class and return true.
     // TODO
-
+    boolean crs=false;
+    boolean std=false;
+    Course regCourse = null;
+    Student regStudent = null;
+    boolean canRegister=false;
     for (Course c : this.courseCatalog) {
       if (c.getCode().equals(courseCode)) {
-        for (Student s : this.students) {
-          if (s.getGnum() == gnum) {
-            if (s.registerAClass(c, this.semester, this.year)) {
-              return true;
-            } 
-            else {
-              return false;
-            }
-          }
-        }
+        crs=true;
+        regCourse=c;
+        break;
       }
     }
-    return false;
+    for (Student s : this.students) {
+      if (s.getGnum() == gnum) {
+        std=true;
+        regStudent=s;
+        break;
+      }
+    }
+    if (crs && std) {
+      if (regStudent.registerAClass(regCourse, this.semester, this.year)) {
+        canRegister=true;
+      } 
+      else { canRegister = false; }
+    }
+  return canRegister;
   }
+  
 
   public boolean drop(long gnum, String courseCode) {
     // Find the student object in the students array using their gnum, if no student
     // is found
     // return false. otherwise drop the course for the student.
     // TODO
-    for (Student s : this.students) {
-      if (s.getGnum() == gnum) {
-        for (Course c : this.courseCatalog) {
-          if (c.getCode().equals(courseCode)) {
-            if (s.dropAClass(courseCode)) {
-              return true;
-            } else {
-              return false;
-            }
-          }
-        }
+    boolean crs=false;
+    boolean std=false;
+    Course dropCourse = null;
+    Student dropStudent = null;
+    boolean canDrop=false;
+    for (Course c : this.courseCatalog) {
+      if (c.getCode().equals(courseCode)) {
+        crs=true;
+        dropCourse=c;
+        break;
       }
     }
-    return false;
+    for (Student s : this.students) {
+      if (s.getGnum() == gnum) {
+        std=true;
+        dropStudent=s;
+        break;
+      }
+    }
+    if (crs && std) {
+      if (dropStudent.dropAClass(courseCode)) {
+        canDrop=true;
+      } 
+      else { canDrop = false; }
+    }
+  return canDrop;
   }
 
   public boolean postGrade(long gnum, String courseCode, int score) {
@@ -197,21 +220,32 @@ public class Registrar {
     // is found
     // return false. otherwise post a course grade for the student.
     // TODO
-    for (Student s : students) {
-      if (s.getGnum() == gnum) {
-        for (TranscriptEntry t : s.getTranscripts()) {
-          if (t==null) {continue;}
-          else if (t.getCode().equals(courseCode)) {
-            if (s.obtainAGrade(t.getCode(), score)) {
-              return true;
-            } else {
-              return false;
-            }
-          }
-        }
+    boolean crs=false;
+    boolean std=false;
+    Course gradeCourse = null;
+    Student gradeStudent = null;
+    boolean canPostGrade=false;
+    for (Course c : this.courseCatalog) {
+      if (c.getCode().equals(courseCode)) {
+        crs=true;
+        gradeCourse=c;
+        break;
       }
     }
-    return false;
+    for (Student s : this.students) {
+      if (s.getGnum() == gnum) {
+        std=true;
+        gradeStudent=s;
+        break;
+      }
+    }
+    if (crs && std) {
+      if (gradeStudent.obtainAGrade(courseCode, score)) {
+        canPostGrade=true;
+      } 
+      else { canPostGrade = false; }
+    }
+  return canPostGrade;
   }
 
   public String getProgress(long gnum, String semester, int year) {
