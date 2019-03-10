@@ -124,14 +124,23 @@ public abstract class Student {
     // in the current semester and will return false if thats the case.
     // hint: a student would be currently enrolled if the .isActive() method
     // returned true.
-    boolean canAdd = true;
+    boolean canAdd = true; 
+    System.out.println("outside");
+    int count=0;
     if (approvedForClass(c)) {
+      System.out.println("passed1");
       for (TranscriptEntry t : this.transcripts) {
-        if (t.getCode().equals(c.getCode()) && t.isActive()) {
-          canAdd = false;
-          break;
-        } 
+        if (t.getCode().equals(c.getCode())) {
+          System.out.println("passed2");
+          count++;
+          if (t.isActive()) {
+            canAdd = false;
+            break;
+          }
+          else {canAdd=true; break;} // need fix
+        }
       }
+      if (count==0) {System.out.println("not in transcript"); canAdd=true;}
     } 
     else {
       canAdd = false;
@@ -155,30 +164,54 @@ public abstract class Student {
   // replace it with a null value, shift array elementsleft-ward to replace it!
   // hint: create a new array when removing a course from the transcripts array
        //TODO
-    boolean canDrop = false;
-    TranscriptEntry classDrop = null;
-    for (TranscriptEntry t : this.transcripts) {
-      if ((t.getCode()).equals(courseCode) && t.isActive()) {
-          canDrop = true;
-          classDrop = t;
-          break;
-      }
+  //   boolean canDrop = false;
+  //   TranscriptEntry classDrop = null;
+  //   for (TranscriptEntry t : this.transcripts) {
+  //     if ((t.getCode()).equals(courseCode) && t.isActive()) {
+  //         canDrop = true;
+  //         classDrop = t;
+  //         break;
+  //     }
+  //   }
+  //   if (canDrop) {
+  //     TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length];
+  //     int a = 0;
+  //     for (int x = 0; x < this.transcripts.length; x++) {
+  //       if (this.transcripts[x].equals(classDrop)) {
+  //         continue;
+  //       } else {
+  //         temp[a] = this.transcripts[x];
+  //         a++;
+  //       }
+  //     }
+  //     this.transcripts = temp;
+  //   }
+  //   return canDrop;
+  // }
+  boolean canDrop = false;
+  TranscriptEntry droppedCourse=null;
+  for (TranscriptEntry t : this.transcripts) {
+    if(t.getCode().equals(courseCode)&& t.isActive()){
+      droppedCourse=t;
+      canDrop=true;
     }
-    if (canDrop) {
-      TranscriptEntry[] temp = new TranscriptEntry[this.transcripts.length];
-      int a = 0;
-      for (int x = 0; x < this.transcripts.length; x++) {
-        if (this.transcripts[x].equals(classDrop)) {
-          continue;
-        } else {
-          temp[a] = this.transcripts[x];
-          a++;
-        }
-      }
-      this.transcripts = temp;
-    }
-    return canDrop;
   }
+  if (canDrop) {
+    TranscriptEntry[]temp= new TranscriptEntry[this.transcripts.length];
+    for(int i= 0; i<this.transcripts.length;i++){
+      if(this.transcripts[i].equals(droppedCourse)){
+        continue;
+      }
+      else{
+        temp[i]=this.transcripts[i];
+      }
+    }
+  }
+  return canDrop;
+}
+
+
+
 
   public boolean obtainAGrade(String courseCode, int score) {
     // this method will search the transcripts array to find a course and will
