@@ -11,16 +11,21 @@ public class Undergraduate extends Student {
   /**
    * Constructor method.
    */
+  
+   /// Constructor, initialize attributes
   public Undergraduate(String first, String last, long gnum, String major, String degree, String highSchool) {
     // TODO
-    super(0, first, last, gnum, major, degree);
-    this.highSchool = highSchool;
+    super(0, first, last, gnum, major, degree); // Since this is a subclass, super() is used
+    this.highSchool = highSchool; 
   }
 
   /**
    * Accessor methods.
    */
   // TODO
+
+  // Setter and getters method 
+
   public String getHighSchool() {
     return this.highSchool;
   }
@@ -39,20 +44,20 @@ public class Undergraduate extends Student {
      * current semester.
      */
     // TODO
-    int creditCount = 0;
+    int creditCount = 0; // is used to count total credits of major course that a student is currently taking
     if (c.getDept().equalsIgnoreCase(this.getMajor())){
-      return true;
-    } else {
-      for (TranscriptEntry t : this.getTranscripts()) {
-        if (t.getDept().equalsIgnoreCase(this.getMajor()) && t.isActive()) {
-          creditCount += t.getCredits();
+      return true; // if "c" is a major class then it's automatically approved
+    } else { // if the course isn't a major course then loop throush transcript array
+      for (TranscriptEntry t : this.getTranscripts()) { 
+        if (t.getDept().equalsIgnoreCase(this.getMajor()) && t.isActive()) { // if that object is a major course and is taken this semester (isActive()=true)
+          creditCount += t.getCredits(); // Add it to creditCount
         }
       }
     }
-    if (creditCount >= 6) {
-      return true;
+    if (creditCount >= 6) { 
+      return true; // non-major course is approved if total major course credits is 6 or more
     } else {
-      return false;
+      return false; // if total major credit is less than 6, non-major course is not approved
     }
   }
 
@@ -112,7 +117,7 @@ public class Undergraduate extends Student {
     // “Smith, John (G#0000000000), Degree: B.S., Major: Computer Science”
     // TODO
     return String.format("%s, %s (G#%s), Degree: %s, Major: %s", this.last, this.first, this.gnum, this.degree,
-        this.major);
+        this.major); // using String.format and return appropriate string
   }
 
 }
