@@ -22,7 +22,7 @@ public class Course {
     this.code=code;
     this.title=title;
     this.credits=credits;
-    this.dept=Registrar.getDeptName(this.code);   
+    this.dept=Registrar.getDeptName(this.code);   // call in static method for this instance
     }
 
 /**
@@ -30,9 +30,7 @@ public class Course {
  */
 // TODO: define a setter and a getter method for each of the instance variables
 
-/**
- * public methods.
- */
+// getter and setter for instance
 public String getCode() {return this.code;}
 public void setCode(String code) {this.code=code;}
 
@@ -49,13 +47,13 @@ public void setDept(String code) {this.dept=Registrar.getDeptName(code);}
  public String toString() { 
    // TODO: implement so that a string is returned in the following format:
    //  "INFS 612 Communication Systems (3)�
-   return String.format("%s %s", this.code, this.title);
+   return String.format("%s %s", this.code, this.title); // Using string format to return appropriate string
    }
  
  public String fullString() {
    // TODO: implement so that a string is returned in the following format:  
    //"INFS 612 Communication Systems (3) credit hours�
    return String.format("%s %s, (%d) credit hours.", this.code, this.title, this.credits);
- }
+ } // Same as above but different string format style
 
 }
