@@ -9,6 +9,7 @@ public class Graduate extends Student {
     private String undergraduateInstitution;
 
 // the class must define the following public and protected methods:
+// Constructor is the same as undergraduate subclass
     public Graduate(String fname, String lname, long gnum, String major, String degree, String undergraduateMajor, String undergraduateInstitution) {
         super(1,fname,lname,gnum,major,degree);
         this.undergraduateMajor=undergraduateMajor;
@@ -19,7 +20,7 @@ public class Graduate extends Student {
 
     public String getUndergraduateInstitution() {return this.undergraduateInstitution;}
 
-    @Override public String toString() {
+    @Override public String toString() { // Same as undergraduate method toString()
         return String.format("%s, %s (G#%s), Degree: %s, Major: %s", this.last, this.first, this.gnum, this.degree,this.major);
     }
  
@@ -27,8 +28,9 @@ public class Graduate extends Student {
     // A GraduateStudent can only register to a course if either it belongs to the program he majors in,
     // for example if the student majors in Physics, then the course's program must be physics
         boolean isApproved=true;
+        // a course is approved for graduate student if and only if it's a major course
         if (c.getDept().equalsIgnoreCase(super.getMajor())) {isApproved=true;}
-        else {return isApproved=false;}
+        else {return isApproved=false;} // If it's not a major course then it's not approved
         return isApproved;
     }
 
