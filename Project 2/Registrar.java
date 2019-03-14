@@ -10,8 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Registrar {
-
+public class Registrar { // Declare attributes for class 
   /**
    * Attributes.
    */
@@ -25,6 +24,8 @@ public class Registrar {
   /**
    * Constructor.
    */
+
+   // constructor and initialize
   public Registrar(String semester, int year) {
     // TODO.
     // note: maximum number of students is 100, and maximum number of courses is 50.
@@ -47,6 +48,8 @@ public class Registrar {
   /**
    * Accessor methods.
    */
+  
+   // setter and getter method
   public void setSemester(String semester) {
     this.semester = semester;
   }
@@ -83,17 +86,17 @@ public class Registrar {
     // if courseCatalog is full , return false, otherwise, add course to the
     // catalog.
     // TODO
-    if (this.courseCatalog.length >= 50) {
+    if (this.courseCatalog.length >= 50) { // if course catalof is full, return false
       return false;
     } 
-    else {
+    else { // if array is not full, resize array, length + 1
       Course[] temp = new Course[this.courseCatalog.length + 1];
-      for (int a = 0; a < this.courseCatalog.length; a++) {
+      for (int a = 0; a < this.courseCatalog.length; a++) { // append old element in
         temp[a] = this.courseCatalog[a];
       }
-      temp[temp.length - 1] = new Course(code, title, hours);
-      this.courseCatalog = temp;
-      return true;
+      temp[temp.length - 1] = new Course(code, title, hours); // append new course in the array
+      this.courseCatalog = temp; // assign this.courseCatalog to the new array
+      return true; // return true
     }
   }
 
@@ -107,6 +110,7 @@ public class Registrar {
     return str;
   }
 
+  // Code for this method is exactly the same as addStudent method below
   public boolean addStudent(String fname, String lname, long gnum, String major, String degree, String highSchool) {
     // if the students array is full, return false.
     // otherwise add the student information to the students arrays
@@ -131,16 +135,16 @@ public class Registrar {
     // an overloaded method which does the sam as the other addStudent method
     // TODO
     if (this.students.length >= 100) {
-      return false;
+      return false; // if array is full, return false
     } 
-    else {
-      Student[] temp = new Student[this.students.length + 1];
-      for (int a = 0; a < this.students.length; a++) {
+    else { // if array is not full 
+      Student[] temp = new Student[this.students.length + 1]; // resize array, length + 1
+      for (int a = 0; a < this.students.length; a++) {  // append elements in
         temp[a] = this.students[a];
       }
-      temp[temp.length - 1] = new Graduate(fname, lname, gnum, major, degree, uMajor, uInstit);
-      this.students = temp;
-      return true;
+      temp[temp.length - 1] = new Graduate(fname, lname, gnum, major, degree, uMajor, uInstit); // append new object to new created array
+      this.students = temp; // assign this.student to temp
+      return true; // return true
     }
   }
 
@@ -160,25 +164,25 @@ public class Registrar {
     boolean canRegister=false;
     for (Course c : this.courseCatalog) {
       if (c.getCode().equalsIgnoreCase(courseCode)) {
-        crs=true;
-        regCourse=c;
+        crs=true; // if course is found
+        regCourse=c; // assign regCourse to that object
         break;
       }
     }
-    for (Student s : this.students) {
+    for (Student s : this.students) { // same as above
       if (s.getGnum() == gnum) {
         std=true;
         regStudent=s;
         break;
       }
     }
-    if (crs && std) {
-      if (regStudent.registerAClass(regCourse, this.semester, this.year)) {
-        canRegister=true;
-      } 
-      else { canRegister = false; }
+    if (crs && std) { // if both student and course is found, invoke registerAClass
+      if (regStudent.registerAClass(regCourse, this.semester, this.year)) { // if registerAClass return true
+        canRegister=true; // assign canRegister to true
+      }  
+      else { canRegister = false; } // if not, assign canRegister to false
     }
-  return canRegister;
+  return canRegister; // return boolean
   }
   
 
@@ -194,25 +198,25 @@ public class Registrar {
     boolean canDrop=false;
     for (Course c : this.courseCatalog) {
       if (c.getCode().equalsIgnoreCase(courseCode)) {
-        crs=true;
-        dropCourse=c;
+        crs=true; // if course is found
+        dropCourse=c; // assign dropCourse to that object
         break;
       }
     }
-    for (Student s : this.students) {
+    for (Student s : this.students) {  // same as above
       if (s.getGnum() == gnum) {
         std=true;
         dropStudent=s;
         break;
       }
     }
-    if (crs && std) {
-      if (dropStudent.dropAClass(courseCode)) {
-        canDrop=true;
-      } 
-      else { canDrop = false; }
+    if (crs && std) { // if both student and course is found, invoke dropAClass
+      if (dropStudent.dropAClass(courseCode)) { // if dropAClass return true
+        canDrop=true; // assign canDrop to true
+      }  
+      else { canDrop = false; } // if not, assign canDrop to false
     }
-  return canDrop;
+  return canDrop; // return boolean
   }
 
   public boolean postGrade(long gnum, String courseCode, int score) {
@@ -227,23 +231,23 @@ public class Registrar {
     boolean canPostGrade=false;
     for (Course c : this.courseCatalog) {
       if (c.getCode().equalsIgnoreCase(courseCode)) {
-        crs=true;
-        gradeCourse=c;
+        crs=true; // if course is found
+        gradeCourse=c; // assign gradeCourse to that object
         break;
       }
     }
-    for (Student s : this.students) {
+    for (Student s : this.students) { // same as above 
       if (s.getGnum() == gnum) {
         std=true;
         gradeStudent=s;
         break;
       }
     }
-    if (crs && std) {
-      if (gradeStudent.obtainAGrade(courseCode, score)) {
-        canPostGrade=true;
+    if (crs && std) { // if both course and student is found
+      if (gradeStudent.obtainAGrade(courseCode, score)) { // invoke obtainAGrade method
+        canPostGrade=true; // if obtainAGrade method return true, then return true
       } 
-      else { canPostGrade = false; }
+      else { canPostGrade = false; } // if not then return false
     }
   return canPostGrade;
   }
@@ -278,12 +282,13 @@ public class Registrar {
   /**
    * Private methods. you will need few helper methods.
    */
+  // find student using given gnum
   public Student findStudent(long gnum) {
     for (Student a : this.students) {
-      if (a.getGnum() == gnum) {
+      if (a.getGnum() == gnum) { // if student is found return student object
         return a;
       }
     }
-    return null;
+    return null; // if no student is found, return null
   }
 }
