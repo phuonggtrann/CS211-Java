@@ -1,6 +1,6 @@
 // an Exception
-public class LoadException {
+public class LoadException extends Exception {
     public LoadException(String msg) {
-        this.msg=msg;
+        super(msg);
     }
 }
