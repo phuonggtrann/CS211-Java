@@ -1,6 +1,6 @@
 // both Loadable and StillImage
 public class LoadableImage implements Loadable, StillImage {
-    private int[][] pixelInput;
+    private int[] pixelInput;
     // Default construct=or
     public LoadableImage() {}
     
@@ -43,6 +43,7 @@ public class LoadableImage implements Loadable, StillImage {
                 if (data.length-3==data[0]*data[1]) {
                     this.w=data[1];
                     this.h=data[2];
+                    this.pixelInput=data;
                     LoadableImage newImg = new LoadableImage(data[1], data[2]);
                     return newImg;
                 }
@@ -52,7 +53,7 @@ public class LoadableImage implements Loadable, StillImage {
     }
     
 
-    // return width of the loaded image, in pixels
+    // return width of the loaded image, in pixels 
     // no specific behavior if this is called without loading an image first
     public int width() {return this.w;}
 
