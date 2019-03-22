@@ -1,5 +1,6 @@
+// Declare Exception class
 public class ZeroException extends Exception {
     public ZeroException() {
-        super();
+        super(); // Super() bc this is a children class
     }
 }
