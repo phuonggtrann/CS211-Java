@@ -17,7 +17,17 @@ public class LoadableImage implements Loadable, StillImage {
         boolean isMatch = false;
         if (data.length<1) {isMatch=false;}
         else {
-            if (data[0]==55) {isMatch=true;}
+            if (data[0]==55) {
+                isMatch=true;
+                // Create internal 2d array
+                int i=0;
+                for (int a=0; a<=this.h; a++) {
+                    for (int b=0; b<=this.w; b++) {
+                        this.pixelInput[h][w]=data[i];
+                        i++;
+                    }
+                }
+            }
             else {isMatch=false;}
         }
         return isMatch;
@@ -29,13 +39,6 @@ public class LoadableImage implements Loadable, StillImage {
     // if ok, construct new LoadableImage with dimenions
     public LoadableImage load(int[] data) throws LoadException {
         int notQualify=0;
-        int i=0;
-        for (int a=0; a<=this.h; a++) {
-            for (int b=0; b<=this.w; b++) {
-                this.pixelInput[h][w]=data[i];
-                i++;
-            }
-        }
         // no width or height
         if (data.length<3) {throw new LoadException();
         }
@@ -49,7 +52,7 @@ public class LoadableImage implements Loadable, StillImage {
                 if (data.length-3==data[0]*data[1]) {
                     this.w=data[1];
                     this.h=data[2];
-                    this.pixelInput=data;
+                    // Construct new LoadableImage and return it
                     LoadableImage newImg = new LoadableImage(data[1], data[2]);
                     return newImg;
                 }
@@ -65,7 +68,9 @@ public class LoadableImage implements Loadable, StillImage {
         try{
             return this.w;
         }
-        catch (LoadException e) {}
+        catch (LoadException e) {
+            return 0;
+        }
     }
 
     // same as width() but return height
@@ -73,18 +78,24 @@ public class LoadableImage implements Loadable, StillImage {
         try {
             return this.h;
         }
-        catch (LoadException e) {}
+        catch (LoadException e) {
+            return 0;
+        }
     }
 
     // return pixel at coordinate (x,y)
     // If ask for out of bounds, throw exception
     // no specific behavior if this is called without loading an image first
     public int getPixel(int x, int y) {
-        // FIXME: if out of bound
-        try {
+        try{
             return this.pixelInput[x][y];
         }
-        catch (LoadException e) {}
+        catch (LoadException e1) {
+            return 0;
+        }
+        catch (IndexOutOfBoundsException e2) {
+            return 0;
+        }
     }
 
 }
