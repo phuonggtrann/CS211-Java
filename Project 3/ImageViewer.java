@@ -7,7 +7,7 @@ public abstract class ImageViewer implements Player {
     public abstract void view(StillImage img);
 
     // return true if input i is a StillImage and false if not
-    public boolean canPlay(Loadable i) {
+    public boolean canPlay(Loadable l) {
         if (i instanceof StillImage) {return true;} 
         else {return false;}   
     }

@@ -15,6 +15,13 @@ public class TextImageViewer implements ImageViewer {
         // getPixel(), to find out the pixel data in your image
         // getChar(), to find out the text character corresponding to each pixel
         // System.out.println(), to print out lines of text
+        for (int a=0; a<=img.height(); a++) {
+            String s="";
+            for (int b=0; a<=img.width(); b++) {
+                s += this.getChar(img.getPixel(a, b));
+            }
+            System.out.prinln(s);
+        }
                 
     }
 
