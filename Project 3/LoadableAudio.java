@@ -51,7 +51,7 @@ public class LoadableAudio implements Loadable, AudioStream {
                     }
                 }
                 aud = new LoadableAudio(data[3], data.length-4);
-                aud.setAudio(data);
+                aud.setAudioData(data);
                 this.frequency=data[3];
                 this.size=data.length-4;
             }
