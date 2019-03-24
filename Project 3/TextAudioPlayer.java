@@ -1,5 +1,5 @@
 // this is an AudioPlayer
-public class TextAudioPlayer {
+public class TextAudioPlayer implements AudioPlayer {
     // default constructor
     public TextAudioPlayer() {}
 

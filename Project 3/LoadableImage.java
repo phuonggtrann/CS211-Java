@@ -35,7 +35,7 @@ public class LoadableImage implements Loadable, StillImage {
         // or pixel data out of bound (0-999)
     // if ok, construct new LoadableImage with dimenions
     public LoadableImage load(int[] data) throws LoadException {
-      LoadableImage loaded=null;
+      LoadableImage img=null;
       try{
         if (data.length<3){
           throw new LoadException("There is no width or height");
@@ -48,7 +48,10 @@ public class LoadableImage implements Loadable, StillImage {
              throw new LoadException ("pixel value out of range");
             }
           }
-          loaded= new LoadableImage(data[2], data[1]);
+          // create new LoadableImage and initialize width and height
+          img= new LoadableImage(data[2], data[1]);
+          this.w=data[1];
+          this.h=data[2];
           int dataCounter=0;
           int [][] temp= new int[data[2]][data[1]];
           for(int i=0; i<data[2];i++){
@@ -57,12 +60,12 @@ public class LoadableImage implements Loadable, StillImage {
               dataCounter++;
             }
           }
-          loaded.setPixelInput(temp);
+          img.setPixelInput(temp);
         }
       }catch(LoadException e){
         System.out.println(e);
       }
-      return loaded;
+      return img;
     }
 
     // return width of the loaded image, in pixels 

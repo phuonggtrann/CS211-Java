@@ -37,19 +37,23 @@ public class LoadableAudio implements Loadable, AudioStream {
             }
             for (int a : data) {
                 if (a<-999 || a>999) {
-                    throw new LoadException("Amplitude dara is outside of bounds");
+                    throw new LoadException("Amplitude data is outside of bounds");
                 }
             }
+            LoadableAudio aud= new LoadableAudio(data[3], data.length-4);
+            this.frequency=data[3];
+            this.size=data.length-4;
         }
+        return aud;
     }
     
     // return playback frequency of the loaded audio data
-    public int freq() {return 0;}
+    public int freq() {return this.frequency;}
     
     // return next element of audio data from current playback
-    public int next() {return 0;} 
+    public int next() {return 0;} // FIXME
     
     // true if there's still left to play
     // ie: as long as next() call has not stepped throught all of the audio data yet
-    public boolean hasNext() {return true;}
+    public boolean hasNext() {return true;} // FIXME
 }
