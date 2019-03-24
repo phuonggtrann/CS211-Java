@@ -1,7 +1,9 @@
 // this is an ImageViewer
-public class TextImageViewer implements ImageViewer {
+public class TextImageViewer extends ImageViewer {
     // default constructor
-    public TextImageViewer() {}
+    public TextImageViewer() {
+        super();
+    }
 
     // retreive text character corresponding to given pixel value
     private final char[] vals = {' ', ',', 'o', 'O', '@'};
@@ -20,7 +22,7 @@ public class TextImageViewer implements ImageViewer {
             for (int b=0; a<=img.width(); b++) {
                 s += this.getChar(img.getPixel(a, b));
             }
-            System.out.prinln(s);
+            System.out.println(s);
         }
                 
     }

@@ -4,7 +4,7 @@ public abstract class AudioPlayer implements Player{
     public AudioPlayer() {}
 
     // defined functionality for playing audio
-    public abstract void playback(AudioStrem aud);
+    public abstract void playback(AudioStream aud);
 
     // true if input 1 is an AudioStream, false if not
     public boolean canPlay(Loadable l) {
@@ -15,9 +15,9 @@ public abstract class AudioPlayer implements Player{
     }
 
     // plays the input loadable i, call playback()
-    public void play(Loadble i) {
-        if (canPlay) {
-            playback((AudioStream)i);
+    public void play(Loadable l) {
+        if (this.canPlay(l)) {
+            playback((AudioStream)l);
         }
     }
 }

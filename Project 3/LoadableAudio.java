@@ -28,7 +28,8 @@ public class LoadableAudio implements Loadable, AudioStream {
     // throw exception if not enough data or out of bound (-999-999)
     // otherwise, create new LoadableAutdio and return
     public LoadableAudio load(int[] data) throws LoadException {
-        if (!isMatch) {
+        LoadableAudio aud = null;
+        if (!this.matches(data)) {
             throw new LoadException("This is not audio data type");
         }
         else {
@@ -40,7 +41,7 @@ public class LoadableAudio implements Loadable, AudioStream {
                     throw new LoadException("Amplitude data is outside of bounds");
                 }
             }
-            LoadableAudio aud= new LoadableAudio(data[3], data.length-4);
+            aud = new LoadableAudio(data[3], data.length-4);
             this.frequency=data[3];
             this.size=data.length-4;
         }
