@@ -6,13 +6,21 @@ public class LoadableAudio implements Loadable, AudioStream {
     // Declare insistance
     private int size;
     private int frequency;
-    private LoadableAudio a;
+    // private instance
+    private int[] audioData;
+    private int nextIndex;
 
     // Over-loading constructor 
     public LoadableAudio(int frequency, int size) {
-        a = new LoadableAudio(frequency, size);
+        this.nextIndex=0;
+        this.audioData=new int[0];
         this.frequency = frequency;
         this.size = size;
+    }
+
+    // Set internal array
+    private void setAudioData(int[] audioData) {
+        this.audioData=audioData;
     }
 
     // true if first 3 elements are 3,2,1 
@@ -29,21 +37,26 @@ public class LoadableAudio implements Loadable, AudioStream {
     // otherwise, create new LoadableAutdio and return
     public LoadableAudio load(int[] data) throws LoadException {
         LoadableAudio aud = null;
-        if (!this.matches(data)) {
-            throw new LoadException("This is not audio data type");
-        }
-        else {
-            if (data.length<=3) {
-                throw new LoadException("There is no frequency");
+        try {
+            if (!this.matches(data)) {
+                throw new LoadException("This is not audio data type");
             }
-            for (int a : data) {
-                if (a<-999 || a>999) {
-                    throw new LoadException("Amplitude data is outside of bounds");
+            else {
+                if (data.length<=3) {
+                    throw new LoadException("There is no frequency");
                 }
+                for (int a : data) {
+                    if (a<-999 || a>999) {
+                        throw new LoadException("Amplitude data is outside of bounds");
+                    }
+                }
+                aud = new LoadableAudio(data[3], data.length-4);
+                aud.setAudio(data);
+                this.frequency=data[3];
+                this.size=data.length-4;
             }
-            aud = new LoadableAudio(data[3], data.length-4);
-            this.frequency=data[3];
-            this.size=data.length-4;
+        } catch (LoadException e) {
+            System.out.println(e);
         }
         return aud;
     }
@@ -52,9 +65,27 @@ public class LoadableAudio implements Loadable, AudioStream {
     public int freq() {return this.frequency;}
     
     // return next element of audio data from current playback
-    public int next() {return 0;} // FIXME
+    public int next() {
+        int value=0;
+        try{
+            value=this.audioData[this.nextIndex];
+        }
+        catch (IndexOutOfBoundsException e){
+            System.out.println(e);
+        }   
+        return value; 
+    }
     
     // true if there's still left to play
     // ie: as long as next() call has not stepped throught all of the audio data yet
-    public boolean hasNext() {return true;} // FIXME
+    public boolean hasNext() {
+        boolean isNext=false;
+        if (this.nextIndex+1<this.size) {
+            isNext=true;
+        }
+        else {
+            isNext=false;
+        }
+        return isNext;
+    }
 }
