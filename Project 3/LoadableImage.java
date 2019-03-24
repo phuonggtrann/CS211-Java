@@ -1,12 +1,16 @@
 // both Loadable and StillImage
 public class LoadableImage implements Loadable, StillImage {
     private int[][] pixelInput;
-    // Default construct=or
-    public LoadableImage() {}
+    private int w;
+    private int h;
+    // Default constructor
+    public LoadableImage() {
+      this.w=0;
+      this.h=0;
+    }
     
     // Over-load constructor
     public LoadableImage(int w, int h) {
-        this.pixelInput = new int[h][w];
         this.w=w;
         this.h=h;
     }
@@ -17,20 +21,13 @@ public class LoadableImage implements Loadable, StillImage {
         boolean isMatch = false;
         if (data.length<1) {isMatch=false;}
         else {
-            if (data[0]==55) {
-                isMatch=true;
-                // Create internal 2d array
-                int i=0;
-                for (int a=0; a<=this.h; a++) {
-                    for (int b=0; b<=this.w; b++) {
-                        this.pixelInput[h][w]=data[i];
-                        i++;
-                    }
-                }
-            }
+            if (data[0]==55) {isMatch=true;}
             else {isMatch=false;}
         }
         return isMatch;
+    }
+    private void setPixelInput(int[][] pixelInput){
+      this.pixelInput=pixelInput;
     }
 
     // throw a LoadException if no width/height 
@@ -38,64 +35,57 @@ public class LoadableImage implements Loadable, StillImage {
         // or pixel data out of bound (0-999)
     // if ok, construct new LoadableImage with dimenions
     public LoadableImage load(int[] data) throws LoadException {
-        int notQualify=0;
-        // no width or height
-        if (data.length<3) {throw new LoadException();
-        }
-        else {
-            for (int x: data) {
-                if (x<0 || x>999) {
-                    throw new LoadException();
-                    notQualify++;}
+      LoadableImage loaded=null;
+      try{
+        if (data.length<3){
+          throw new LoadException("There is no width or height");
+      }
+        else if(data.length<(this.h*this.w+3)||data.length>(this.h*this.w+3) ){
+          throw new LoadException ("Data mismatch");
+        }else  {
+          for (int i=0; i< data.length; i++){
+            if(data[i]<0 || data[i]>999){
+             throw new LoadException ("pixel value out of range");
             }
-            if (notQualify<1) {
-                if (data.length-3==data[0]*data[1]) {
-                    this.w=data[1];
-                    this.h=data[2];
-                    // Construct new LoadableImage and return it
-                    LoadableImage newImg = new LoadableImage(data[1], data[2]);
-                    return newImg;
-                }
-                else {throw new LoadException();}
+          }
+          loaded= new LoadableImage(data[2], data[1]);
+          int dataCounter=0;
+          int [][] temp= new int[data[2]][data[1]];
+          for(int i=0; i<data[2];i++){
+            for(int z=0; z<data[1];z++){
+              temp[i][z]=data[dataCounter];
+              dataCounter++;
             }
+          }
+          loaded.setPixelInput(temp);
         }
+      }catch(LoadException e){
+        System.out.println(e);
+      }
+      return loaded;
     }
-    
 
     // return width of the loaded image, in pixels 
     // no specific behavior if this is called without loading an image first
     public int width() {
-        try{
-            return this.w;
-        }
-        catch (LoadException e) {
-            return 0;
-        }
+        return this.w;
     }
-
     // same as width() but return height
     public int height() {
-        try {
             return this.h;
-        }
-        catch (LoadException e) {
-            return 0;
-        }
     }
 
     // return pixel at coordinate (x,y)
     // If ask for out of bounds, throw exception
     // no specific behavior if this is called without loading an image first
     public int getPixel(int x, int y) {
+      int value=0;
         try{
-            return this.pixelInput[x][y];
+          value= this.pixelInput[x][y];
         }
-        catch (LoadException e1) {
-            return 0;
+        catch(IndexOutOfBoundsException e){ // if out of bounds 
+          System.out.println(e);
         }
-        catch (IndexOutOfBoundsException e2) {
-            return 0;
-        }
+        return value;
     }
-
 }

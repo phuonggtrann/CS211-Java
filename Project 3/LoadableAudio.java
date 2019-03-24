@@ -3,6 +3,10 @@ public class LoadableAudio implements Loadable, AudioStream {
     // default constructor
     public LoadableAudio() {}
 
+    // Declare insistance
+    private int size;
+    private int frequency;
+
     // Over-loading constructor 
     public LoadableAudio(int frequency, int size) {
         this.frequency = frequency;
@@ -12,7 +16,7 @@ public class LoadableAudio implements Loadable, AudioStream {
     // true if first 3 elements are 3,2,1 
     // false otherwise or there's less than 3 elements
     public boolean matches(int[] data) {
-        isMatch=false;
+        boolean isMatch=false;
         if (data.length>3) {
             if (data[0]==3 && data[1]==2 && data[2]==1) {isMatch = true;}
         }
