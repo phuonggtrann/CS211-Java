@@ -6,9 +6,11 @@ public class LoadableAudio implements Loadable, AudioStream {
     // Declare insistance
     private int size;
     private int frequency;
+    private LoadableAudio a;
 
     // Over-loading constructor 
     public LoadableAudio(int frequency, int size) {
+        a = new LoadableAudio(frequency, size);
         this.frequency = frequency;
         this.size = size;
     }
@@ -27,7 +29,17 @@ public class LoadableAudio implements Loadable, AudioStream {
     // otherwise, create new LoadableAutdio and return
     public LoadableAudio load(int[] data) throws LoadException {
         if (!isMatch) {
-            throw new LoadException();
+            throw new LoadException("This is not audio data type");
+        }
+        else {
+            if (data.length<=3) {
+                throw new LoadException("There is no frequency");
+            }
+            for (int a : data) {
+                if (a<-999 || a>999) {
+                    throw new LoadException("Amplitude dara is outside of bounds");
+                }
+            }
         }
     }
     
