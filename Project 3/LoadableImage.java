@@ -54,7 +54,7 @@ public class LoadableImage implements Loadable, StillImage {
         throw new LoadException("Data mismatch");
       } else {
         for (int i : data) {
-          if (data[i] < 0 || data[i] > 999) {
+          if (i < 0 || i > 999) {
             throw new LoadException("pixel value out of range");
           }
         }
