@@ -54,11 +54,11 @@ public class MultimediaPlayer implements Player, Loadable{
     public int[] read(String filename) throws LoadException, IOException {
         int count=0;
         Scanner sCount = new Scanner(new File(filename));
-        while (sCount.hasNextLine()) {
-            // if (sCount.nextInt()) {
-            //     count++;
-            // }
-        }
+        // while (sCount.hasNextLine()) {
+        //     // if (sCount.nextInt()) {
+        //     //     count++;
+        //     // }
+        // }
         int [] ans = new int[count];
         sCount.close();
         Scanner s = new Scanner(new File(filename));
