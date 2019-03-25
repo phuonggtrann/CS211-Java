@@ -12,8 +12,8 @@ public class LoadableImage implements Loadable, StillImage {
 
   // Over-load constructor
   public LoadableImage(int w, int h) {
-    this.w = w;
     this.h = h;
+    this.w = w;
   }
 
   // return true if the first element is 55
@@ -37,7 +37,8 @@ public class LoadableImage implements Loadable, StillImage {
     this.pixelInput = new int[data[2]][data[1]];
     for (int a = 0; a < data[2]; a++) {
       for (int b = 0; b < data[1]; b++) {
-        this.pixelInput[a][b] = data[counter++];
+        this.pixelInput[a][b] = data[counter];
+        counter++;
       }
     }
   }
@@ -60,9 +61,9 @@ public class LoadableImage implements Loadable, StillImage {
         }
       }
       // create new LoadableImage and initialize width and height
-      LoadableImage img = new LoadableImage(data[2], data[1]);
-      this.w = data[1];
-      this.h = data[2];
+      LoadableImage img = new LoadableImage(data[1], data[2]);
+      // this.w = data[1];
+      // this.h = data[2];
       img.setPixelInput(data);
       return img;
     }
@@ -86,9 +87,9 @@ public class LoadableImage implements Loadable, StillImage {
   public int getPixel(int x, int y) {
     int value = 0;
     try {
-      value = this.pixelInput[x][y];
+      value = this.pixelInput[y][x];
     } catch (IndexOutOfBoundsException e) { // if out of bounds
-      System.out.println(e);
+
     }
     return value;
   }

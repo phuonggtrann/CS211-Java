@@ -10,7 +10,7 @@ public class TextAudioPlayer extends AudioPlayer {
     // do until hasNext() is false
     public void playback(AudioStream aud) {
         while (aud.hasNext()) {
-            int pos = (aud.next()+1000)*7200;
+            int pos = (aud.next()+1000)*7/200;
             String s="";
             for (int a=0; a<pos; a++) {
                 s +=" ";

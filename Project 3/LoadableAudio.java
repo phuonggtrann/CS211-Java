@@ -14,15 +14,19 @@ public class LoadableAudio implements Loadable, AudioStream {
 
     // Over-loading constructor
     public LoadableAudio(int frequency, int size) {
-        this.amplitude = 4;
-        this.audioData = new int[4 + size];
+        this.amplitude = 0;
         this.frequency = frequency;
         this.size = size;
     }
 
     // Set internal array
-    private void setAudioData(int[] audioData) {
-        this.audioData = audioData;
+    private void setAudioData(int[] data) {
+        int count=0;
+        this.audioData = new int[data.length-4];
+        for (int x=4; x<data.length; x++) {
+            this.audioData[count]=data[x];
+            count++;
+        }
     }
 
     // true if first 3 elements are 3,2,1
@@ -46,15 +50,13 @@ public class LoadableAudio implements Loadable, AudioStream {
             if (data.length < 4) {
                 throw new LoadException("There is no frequency");
             }
-            for (int a : data) {
-                if (a < -999 || a > 999) {
+            for (int a=4; a<data.length; a++) {
+                if (data[a] < -999 || data[a] > 999) {
                     throw new LoadException("Amplitude data is outside of bounds");
                 }
             }
             LoadableAudio aud = new LoadableAudio(data[3], data.length - 4);
             aud.setAudioData(data);
-            this.frequency = data[3];
-            this.size = data.length - 4;
             return aud;
         }
     }
@@ -68,9 +70,9 @@ public class LoadableAudio implements Loadable, AudioStream {
     public int next() {
         int value = 0;
         try {
-            value = this.audioData[++this.amplitude];
+            value = this.audioData[this.amplitude];
+            this.amplitude++;
         } catch (IndexOutOfBoundsException e) {
-            System.out.println(e);
         }
         return value;
     }
@@ -80,7 +82,7 @@ public class LoadableAudio implements Loadable, AudioStream {
     public boolean hasNext() {
         boolean isNext = false;
         if (this.amplitude < this.audioData.length) {
-            isNext = false;
+            isNext = true;
         }
         return isNext;
     }
