@@ -51,26 +51,47 @@ public class MultimediaPlayer implements Player, Loadable {
     // read the text data contained and return results of int[]
     // if not in format, throw exception
     public int[] read(String filename) throws LoadException, IOException {
-        int count = 0;
-        Scanner sCount = new Scanner(new File(filename));
-        // while (sCount.hasNextLine()) {
-        // // if (sCount.nextInt()) {
-        // // count++;
-        // // }
-        // }
-        int[] ans = new int[count];
-        sCount.close();
-        Scanner s = new Scanner(new File(filename));
-        int i = 0;
+        int[] ans = new int[0];
+        int countToken = 0;
+        int countInt = 0;
+        try {
+            Scanner token = new Scanner(new File(filename));
+            while (token.hasNext()) {
+                token.next();
+                countToken++;
+            }
+            Scanner ints = new Scanner(new File(filename));
+            while (ints.hasNextInt()) {
+                int[] temp=ans;
+                ans = new int[ans.length + 1];
+                for(int i=0; i<temp.length;i++){
+                    ans[i]=temp[i];
+                }
+                ans[ans.length-1] = ints.nextInt();
+                countInt++;
+            }
+            if (countToken > countInt) {
+                token.close();
+                ints.close();
+                throw new LoadException("Badly format file");
+            }
+               
+            token.close();
+            ints.close();
+
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+
         return ans;
     }
 
     // checking whether any of internal loaders regconize the format
     public boolean matches(int[] data) {
-        boolean ans=false;
-        for(Loadable i:this.loaders){
-            if(i.matches(data)){
-                ans=true;
+        boolean ans = false;
+        for (Loadable i : this.loaders) {
+            if (i.matches(data)) {
+                ans = true;
             }
         }
         return ans;
@@ -81,15 +102,15 @@ public class MultimediaPlayer implements Player, Loadable {
     // if none are found, throw LoadException
     public Loadable load(int[] data) throws LoadException {
         Loadable l = null;
-        if (this.matches(data)) {
-            if (data[0] == 55) {
-                l = new LoadableImage();
+        boolean check = true;
+        for (Loadable i : this.loaders) {
+            if (i.matches(data)) {
+                l = i.load(data);
+                check = false;
             }
-            if (data[0] == 3 && data[1] == 2 && data[2] == 1) {
-                l = new LoadableAudio();
-            }
-        } else {
-            throw new LoadException("no format found");
+        }
+        if (check) {
+            throw new LoadException(" can't load format");
         }
         return l;
     }
@@ -98,6 +119,14 @@ public class MultimediaPlayer implements Player, Loadable {
     // use array to load the media
     // play the resule Loadable
     public void play(String filename) throws LoadException, IOException {
+        Loadable l = null;
+        int[] data = read(filename);
+        if (matches(data)) {
+            l = load(data);
+        }
+        if (canPlay(l)) {
+            play(l);
+        }
     }
 
 }
