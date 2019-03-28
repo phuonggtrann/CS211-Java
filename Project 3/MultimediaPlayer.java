@@ -56,10 +56,12 @@ public class MultimediaPlayer implements Player, Loadable {
         int countInt = 0;
         try {
             Scanner token = new Scanner(new File(filename));
+            // first scan for the amount of token (!=int is counted)
             while (token.hasNext()) {
                 token.next();
                 countToken++;
             }
+            // create scanner for a second scan 
             Scanner ints = new Scanner(new File(filename));
             while (ints.hasNextInt()) {
                 int[] temp=ans;
