@@ -11,5 +11,19 @@ public class TopResult< T extends Comparable<T> > {
             }
         }
     }
-    public T getTopResult() {}
+    public T getTopResult() {
+        if (this.top == null) {
+            return null;
+        } else {
+            return this.top;
+        }
+    }
+    public String toString() {
+        if (this.top == null) {
+            return null;
+        }
+        else {
+            return this.top.toString();
+        }
+    }
 }
