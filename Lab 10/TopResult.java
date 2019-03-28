@@ -6,7 +6,7 @@ public class TopResult< T extends Comparable<T> > {
     public void newResult(T a) {
         if (this.top==null) {this.top=a;}
         else{
-            if (a.compareTo(o)>0) {
+            if (a.compareTo(this.top)>0) {
                 this.top=a;
             }
         }
