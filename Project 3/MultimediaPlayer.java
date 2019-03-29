@@ -112,7 +112,7 @@ public class MultimediaPlayer implements Player, Loadable {
             }
         }
         if (check) {
-            throw new LoadException(" can't load format");
+            throw new LoadException("can't load format");
         }
         return l;
     }
