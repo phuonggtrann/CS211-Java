@@ -52,12 +52,14 @@ public class LoadableImage implements Loadable, StillImage { // implements the i
   // or pixel data out of bound (0-999)
   // if ok, construct new LoadableImage with dimenions
   public LoadableImage load(int[] data) throws LoadException {
-    if (data.length < 3) {
+    if (data.length < 3) { // Missing image's width/height
       throw new LoadException("There is no width or height");
     } else {
+      // if the pixel doesn't match width and height
       if (data.length < (data[1] * data[2] + 3) || data.length > (data[1] * data[2] + 3)) {
         throw new LoadException("Data mismatch");
       } else {
+        // Loop through to check if there's any out of bound pixel
         for (int i : data) {
           if (i < 0 || i > 999) {
             throw new LoadException("pixel value out of range");
@@ -66,17 +68,15 @@ public class LoadableImage implements Loadable, StillImage { // implements the i
       }
       // create new LoadableImage and initialize width and height
       LoadableImage img = new LoadableImage(data[1], data[2]);
-      // this.w = data[1];
-      // this.h = data[2];
-      img.setPixelInput(data);
-      return img;
+      img.setPixelInput(data); // call in self-create void method to initialize internal 2d array
+      return img; // return Loadable object
     }
 
   }
 
   // return width of the loaded image, in pixels
   // no specific behavior if this is called without loading an image first
-  public int width() {
+  public int width() { 
     return this.w;
   }
 
@@ -90,7 +90,7 @@ public class LoadableImage implements Loadable, StillImage { // implements the i
   // no specific behavior if this is called without loading an image first
   public int getPixel(int x, int y) {
     int value = 0;
-    try {
+    try { // use try catch block to catch index out of bound scenerio
       value = this.pixelInput[y][x];
     } catch (IndexOutOfBoundsException e) { // if out of bounds
 

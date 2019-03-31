@@ -16,7 +16,7 @@ public class TextAudioPlayer extends AudioPlayer {
                 s +=" ";
             }
             s+="*";
-            System.out.println(s);
+            System.out.println(s); 
         }
     }
 }
