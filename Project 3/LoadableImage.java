@@ -1,6 +1,7 @@
 // both Loadable and StillImage
-public class LoadableImage implements Loadable, StillImage {
-  private int[][] pixelInput;
+public class LoadableImage implements Loadable, StillImage { // implements the interaces 
+  private int[][] pixelInput; // delcare 2d array
+  // declare variable for image's size 
   private int w;
   private int h;
 
@@ -20,21 +21,24 @@ public class LoadableImage implements Loadable, StillImage {
   // false if it's not or there's no first element
   public boolean matches(int[] data) {
     boolean isMatch = false;
-    if (data.length < 1) {
+    if (data.length < 1) { // if array is empty
       isMatch = false;
     } else {
-      if (data[0] == 55) {
+      if (data[0] == 55) { // only true if index 0 euqal 55
         isMatch = true;
       } else {
         isMatch = false;
       }
     }
-    return isMatch;
+    return isMatch; // return answer 
   }
-
+  
+  // self declared void method to create internal array
   private void setPixelInput(int[] data) {
-    int counter = 3;
+    int counter = 3; // 0,1,2 index is the information about the image, doesn't count
+    // initialize 2d array
     this.pixelInput = new int[data[2]][data[1]];
+    // Load the pixel data into array
     for (int a = 0; a < data[2]; a++) {
       for (int b = 0; b < data[1]; b++) {
         this.pixelInput[a][b] = data[counter];

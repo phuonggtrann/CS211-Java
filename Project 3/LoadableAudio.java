@@ -69,10 +69,10 @@ public class LoadableAudio implements Loadable, AudioStream {
     // return next element of audio data from current playback
     public int next() {
         int value = 0;
-        try {
-            value = this.audioData[this.amplitude];
-            this.amplitude++;
-        } catch (IndexOutOfBoundsException e) {
+        try { // using try-catch block
+            value = this.audioData[this.amplitude]; 
+            this.amplitude++; // if return the next element, plus 1 for index
+        } catch (IndexOutOfBoundsException e) { // catch out of index 
         }
         return value;
     }
@@ -82,7 +82,7 @@ public class LoadableAudio implements Loadable, AudioStream {
     public boolean hasNext() {
         boolean isNext = false;
         if (this.amplitude < this.audioData.length) {
-            isNext = true;
+            isNext = true; // if the index isn't out of bound, return true
         }
         return isNext;
     }
