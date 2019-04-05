@@ -19,9 +19,9 @@ public class ShrinkFracArray extends AlterableArray {
         // create ShrinkFacArr which take in above array
         ShrinkFracArray sf = new ShrinkFracArray(arr1);
         // call in appropriate method for step 3 and 4 on the instructions
-        sf.print();
-        sf.decimate(2);
-        sf.print();
+        sf.print(); // call print before decimate array
+        sf.decimate(2); // decimate array
+        sf.print(); // recall int to print new array
     }
 
 }
