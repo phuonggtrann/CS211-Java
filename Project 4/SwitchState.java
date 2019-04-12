@@ -1,39 +1,36 @@
+
 public enum SwitchState {
-    ON, OFF, UNKNOWN, ERROR;
+    ON(true, "on"), OFF(false, "off"), UNKNOWN(null, "unknown"), ERROR(null, "error");
+
+    private Boolean mode;
+    private String name;
+
+    // Constructor 
+    private SwitchState(Boolean mode, String name) {
+        this.mode=mode;
+        this.name=name;
+    }
 
     // if ON or OFF, return true.
     // false otherwise
-    public boolean value() {
-        switch (this) {
-        case ON:
-            return true;
-        case OFF:
-            return false;
-        case UNKNOWN:
-            return null;
-        case ERROR:
-            return null;
-        }
+    public Boolean value() {
+        return this.mode;
     }
 
     public String toString() {
-        return this.toString();
+        return this.name;
     }
 
     public SwitchState flip() {
         SwitchState s = null;
         switch (this) {
         case ON:
-            s = SwitchState.OFF;
+            s = OFF;
             break;
         case OFF:
-            s = SwitchState.ON;
+            s = ON;
             break;
-        case UNKNOWN:
-            s = SwitchState.UNKNOWN;
-            break;
-        case ERROR:
-            s = SwitchState.ERROR;
+        default:
             break;
         }
         return s;
