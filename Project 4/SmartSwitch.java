@@ -14,21 +14,26 @@ public class SmartSwitch extends SmartDevice implements Switch {
     public SwitchState getState() {return this.state;}
 
     // should be call whenever the state change
-    private void sendSignal(){
-        
+    private void sendSignal(SwitchSate changeState){
+        for (Listener<Switch, SwitchState> l: this.listenerList) {
+            l.signal(this, changeState);
+        }
     }
 
     public SwitchState flip() {
-        this.state= this.state.flip();
-        // FIXME: didn't signal to the listeners 
+        SwitchState oldState = this.state;
+        SwitchState changed = this.state.flip();
+        if (oldState!=changed) {
+            sendSignal(changed);
+        }
         return s;
     }
     
     public void change(SwitchState ss) {
-        if (!this.state.equals(ss)) {
+        if (this.state!=ss) {
             this.state = ss;
+            sendSignal(changed);
         }
-        // FIXME: didn't signal to the listeners
     }
 
     public void addStateListener(Listener<Switch,SwitchState> l) {
@@ -40,7 +45,7 @@ public class SmartSwitch extends SmartDevice implements Switch {
     }
 
     public String toString() {
-        return String.format("%s: %s",this.name(), this.state.toString());
+        return String.format("%s %s: %s",this.name(),this.id(), this.state.toString());
     }
 
 
