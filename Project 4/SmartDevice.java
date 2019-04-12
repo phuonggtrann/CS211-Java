@@ -13,7 +13,7 @@ public class SmartDevice implements DeviceInfo{
 
     public String name() {return this.name;}
     public String toString() {
-        return this.name+id();
+        return String.format("%s %d",this.name,id());
     }
 
 }

@@ -1,4 +1,4 @@
-import Java.util.ArrayList;
+import java.util.ArrayList;
 
 public class SmartSwitch extends SmartDevice implements Switch {
 
@@ -14,7 +14,7 @@ public class SmartSwitch extends SmartDevice implements Switch {
     public SwitchState getState() {return this.state;}
 
     // should be call whenever the state change
-    private void sendSignal(SwitchSate changeState){
+    private void sendSignal(SwitchState changeState){
         for (Listener<Switch, SwitchState> l: this.listenerList) {
             l.signal(this, changeState);
         }
@@ -22,17 +22,17 @@ public class SmartSwitch extends SmartDevice implements Switch {
 
     public SwitchState flip() {
         SwitchState oldState = this.state;
-        SwitchState changed = this.state.flip();
-        if (oldState!=changed) {
-            sendSignal(changed);
+        this.state = this.state.flip();
+        if (oldState!=this.state) {
+            sendSignal(this.state);
         }
-        return s;
+        return this.state;
     }
     
     public void change(SwitchState ss) {
         if (this.state!=ss) {
             this.state = ss;
-            sendSignal(changed);
+            sendSignal(ss);
         }
     }
 
