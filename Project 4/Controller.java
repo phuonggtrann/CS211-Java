@@ -14,7 +14,7 @@ public class Controller implements Listener<Switch, SwitchState> {
         sd.setID(this.ID);
         this.ID++;
         this.sdArr.add(sd);
-        if (sd instanceof SmartDevice) {
+        if (sd instanceof SmartSwitch) {
             ((SmartSwitch)sd).addStateListener(this);
         }
         return this.ID;
@@ -29,5 +29,47 @@ public class Controller implements Listener<Switch, SwitchState> {
             }
         }
         return sDev;
+    }
+
+    public SmartDevice getDeviceN(int id) {
+        SmartDevice sDev = null;
+        sDev=this.sdArr.get(id);
+        return sDev;
+    }
+
+    public int numDevices() {
+        return this.sdArr.size();
+    }
+
+    public boolean removeDevice(SmartDevice sd) {
+        boolean devFound=false;
+        if (this.sdArr.contains(sd)) {
+            this.sdArr.remove(sd);
+            devFound=true;
+            if (sd instanceof SmartSwitch) {
+                ((SmartSwitch)sd).removeStateListener(this);
+            }
+        }
+        return devFound;
+    }
+
+    public boolean removeDevice(int id) {
+        if (getDevice(id)!=null) {
+            this.sdArr.remove(getDevice(id));
+            return true;
+        }
+        else {return false;}
+    }
+
+    public void signal(Switch s, SwitchState ss) {
+        System.out.println(String.format("%s %d changed state to %s",s.name(), s.id(), ss.toString()));
+    }
+
+    public String toString(){
+        String s="";
+        for (SmartDevice sd: this.sdArr){
+            s+=sd.toString()+"\n";
+        }
+        return s;
     }
 }
