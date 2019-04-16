@@ -23,6 +23,6 @@ public class ListUtils { // this is our class
         for (int a=0; a<list.size(); a++) { // Since we need index as key, normal for loop is used
             ansMap.put(a, list.get(a)); // .put to create a key-value pair
         }
-        return ansMap; // return answer
+        return ansMap; // return the answer type map
     }
 }
