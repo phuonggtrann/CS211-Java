@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 import java.util.Scanner;
 
-public class PhoneBook { // implements Iterable<Contact> {
+public class PhoneBook implements Iterable<Contact> {
 
     private HashMap<String, Contact> contactHM;
 
@@ -12,8 +12,7 @@ public class PhoneBook { // implements Iterable<Contact> {
 
     public boolean fileToMap(String filename) {
         try {
-            File file = new File(filename);
-            Scanner s = new Scanner(file);
+            Scanner s = new Scanner(new File(filename));
             ArrayList<String> contactList = new ArrayList<String>();
             while (s.hasNextLine()) {
                 contactList.add(s.nextLine());
@@ -23,7 +22,7 @@ public class PhoneBook { // implements Iterable<Contact> {
                 this.contactHM.put(contactList.get(i).toLowerCase(), c);
             }
             s.close();
-            file.close();
+            
             return true;
         } catch (IOException e) {
             return false;
@@ -35,7 +34,7 @@ public class PhoneBook { // implements Iterable<Contact> {
             return false;
         } else {
             Contact c = new Contact(name, email, phone);
-            this.contactHM.put(contactList.get(i).toLowerCase(), c);
+            this.contactHM.put(name.toLowerCase(), c);
             return true;
         }
     }
@@ -67,13 +66,13 @@ public class PhoneBook { // implements Iterable<Contact> {
 
     public String getEmail(String name) {
         if (this.contactHM.containsKey(name.toLowerCase())) {
-            return String.format("%s: %s", name,this.contactHM.get(name.toLowerCase())).getEmail();
+            return String.format("%s: %s", name,this.contactHM.get(name.toLowerCase()).getEmail());
         }
         else {return null;}
     }
     public String getPhone(String name) {
         if (this.contactHM.containsKey(name.toLowerCase())) {
-            return String.format("%s: %s", name,this.contactHM.get(name.toLowerCase())).getPhone();
+            return String.format("%s: %s", name,this.contactHM.get(name.toLowerCase()).getPhone());
         }
         else {return null;}
     }
@@ -97,20 +96,32 @@ public class PhoneBook { // implements Iterable<Contact> {
         return PhoneBookUtils.mapToString(this.contactHM);
     }
     public String getSortedContactList() {
-        List<Contact> l = contactHM.values();
+        List<Contact> l = new ArrayList<Contact>(this.contactHM.values());
         return PhoneBookUtils.listToSortedList(l);
     }
     public String getSortedContactListAlt(){
-        Contact[] c = contactHM.values().toArray();
-        PhoneBookUtils.insertionSort(c, 0);
+        ArrayList<Contact> arrList = new ArrayList<Contact>(this.contactHM.values());
+        Contact[] cont = new Contact[arrList.size()];
+        cont = arrList.toArray(cont);
+        PhoneBookUtils.insertionSort(cont, 0);
         String s = "";
-        for (Contact contact : c) {
+        for (Contact contact : cont) {
             s = s + contact.toString() + "\n";
         }
         return s;
     }
     public String searchContactList(String name) {
-        
+        List<Contact> arrList = new ArrayList<Contact>(this.contactHM.values());
+        Contact[] contact = new Contact[arrList.size()];
+        Contact dummyContact = new Contact(name, "", "");
+        return (PhoneBookUtils.binarySearch(contact, 0, contact.length, dummyContact)).toString();
+    }
+
+    @Override public Iterator<Contact> iterator() {
+        ArrayList<Contact> arrList = new ArrayList<Contact>(this.contactHM.values());
+        Collections.sort(arrList);
+        Iterator<Contact> iter = arrList.iterator();
+        return iter;
     }
 
 }
