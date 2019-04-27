@@ -17,7 +17,7 @@ public class PhoneBook implements Iterable<Contact> {
             while (s.hasNextLine()) {
                 contactList.add(s.nextLine());
             }
-            for (int i = 0; i < contactList.size() - 3; i += 3) {
+            for (int i = 0; i < contactList.size() - 2; i += 3) {
                 Contact c = new Contact(contactList.get(i), contactList.get(i + 1), contactList.get(i + 2));
                 this.contactHM.put(contactList.get(i).toLowerCase(), c);
             }

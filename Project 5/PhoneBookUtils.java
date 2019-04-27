@@ -35,15 +35,12 @@ public final class PhoneBookUtils {
     }
 
     public static <T extends Comparable<T>> T binarySearch(T[] arr, int begin, int end, T key) {
-        T t = null;
-        if (begin >= end || begin >= arr.length - 1) { return t;
-        } else {
-            if (arr[begin].compareTo(key) == 0) { 
-                t= arr[begin];
-            }
-            binarySearch(arr, begin + 1, end, key);
-        return t;}
+        int index = (end+begin)/2;
+        if (key.compareTo(arr[index])==0) {return arr[index];}
+        if (end-1==begin) {return null;}
         
+        if (arr[index].compareTo(key)<0) {return binarySearch(arr,index,end,key);}
+        else {return binarySearch(arr,begin,index,key);}
     }
 
 }
