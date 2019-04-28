@@ -4,7 +4,7 @@ public final class PhoneBookUtils {
     public static <KeyType, ValueType> String mapToString(Map<KeyType, ValueType> map) {
         String s = "";
         for (ValueType col : map.values()) {
-            s = s + col.toString() + "\n";
+            s += String.format("%s\n",col.toString());
         }
         return s;
     }
@@ -13,7 +13,7 @@ public final class PhoneBookUtils {
         String s = "";
         Collections.sort(list);
         for (T t : list) {
-            s = s + t.toString() + "\n";
+            s += t.toString() + "\n";
         }
         return s;
     }

@@ -90,7 +90,7 @@ public class P5tester {
 	Set<String> actualSet = new HashSet<String>(Arrays.asList(tempArr));
     Set<String> expectedSet = new HashSet<String>(Arrays.asList(new String[]{
        "Lawrence Garcia, email: diam@amagna.ca, phone: 1-665-672-6398.",
-       "Lance Farmer, email: sem.egestas@urnanecluctus.ca, phone: 1-425-180-9073.\n"
+       "Lance Farmer, email: sem.egestas@urnanecluctus.ca, phone: 1-425-180-9073."
 	}));
 
 	assertEquals("loaded contacts do not match expected contents", expectedSet, actualSet);
@@ -100,7 +100,7 @@ public class P5tester {
   public void testFileToMap() {
     PhoneBook blackbook = new PhoneBook(); 
     blackbook.fileToMap("contacts.txt");
-    System.out.println(blackbook.getContactList());
+    //System.out.println(blackbook.getContactList());
     String [] tempArr = blackbook.getContactList().split("\n");
 	Set<String> actualSet = new HashSet<String>(Arrays.asList(tempArr));
     Set<String> expectedSet = new HashSet<String>(Arrays.asList(new String[]{
@@ -123,7 +123,7 @@ public class P5tester {
     // testing a method in the utility class
     String [] strArr = {"F", "B", "Eee", "Xve", "Aba"};
     ArrayList<String> strList = new ArrayList<String>(Arrays.asList(strArr));
-    System.out.println(PhoneBookUtils.listToSortedList(strList));
+    //System.out.println(PhoneBookUtils.listToSortedList(strList));
     assertEquals("Aba\n"+"B\n"+"Eee\n"+"F\n"+"Xve\n",PhoneBookUtils.listToSortedList(strList));
   }
    
