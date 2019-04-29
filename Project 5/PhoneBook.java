@@ -51,14 +51,14 @@ public class PhoneBook implements Iterable<Contact> {
         }
     }
 
-    public Contact getContact(String name) {
-        Contact c = null;
+    public Contact getContact(String name) { // return contact if found
+        Contact c = null; // if not, return null
         if (this.contactHM.containsKey(name.toLowerCase())) {
             c = this.contactHM.get(name.toLowerCase());
         }
         return c;
     }
-
+    // same as above but return toString() of that object
     public String getContactInfo(String name) {
         String s = null;
         if (this.contactHM.containsKey(name.toLowerCase())) {
@@ -66,7 +66,7 @@ public class PhoneBook implements Iterable<Contact> {
         }
         return s;
     }
-
+    // Getter and Setters
     public String getEmail(String name) {
         if (this.contactHM.containsKey(name.toLowerCase())) {
             return String.format("%s: %s", name,this.contactHM.get(name.toLowerCase()).getEmail());
@@ -103,12 +103,14 @@ public class PhoneBook implements Iterable<Contact> {
         return PhoneBookUtils.listToSortedList(l);
     }
     public String getSortedContactListAlt(){
+        // Hash Map Value to Original Array
         ArrayList<Contact> arrList = new ArrayList<Contact>(this.contactHM.values());
         Contact[] cont = new Contact[arrList.size()];
         cont = arrList.toArray(cont);
-        PhoneBookUtils.insertionSort(cont, 0);
-        String s = "";
-        for (Contact contact : cont) {
+        // Sorting
+        PhoneBookUtils.insertionSort(cont, 0); 
+        String s = ""; // initialize String
+        for (Contact contact : cont) { // go through every element and add its toString to s variable
             s = s + contact.toString() + "\n";
         }
         return s;
@@ -117,14 +119,14 @@ public class PhoneBook implements Iterable<Contact> {
         List<Contact> arrList = new ArrayList<Contact>(this.contactHM.values());
         Contact[] contact = new Contact[arrList.size()];
         contact = arrList.toArray(contact);  //Load value in 
-        Contact dummyContact = new Contact(name, "", "");
+        Contact dummyContact = new Contact(name, "", ""); // create dummy contact with name
         return (PhoneBookUtils.binarySearch(contact, 0, contact.length, dummyContact)).toString();
     }
 
     @Override public Iterator<Contact> iterator() {
         ArrayList<Contact> arrList = new ArrayList<Contact>(this.contactHM.values());
-        Collections.sort(arrList);
-        Iterator<Contact> iter = arrList.iterator();
+        Collections.sort(arrList); // sort the array list
+        Iterator<Contact> iter = arrList.iterator(); // create iteration object and return it 
         return iter;
     }
 
