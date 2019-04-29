@@ -16,6 +16,21 @@ public class P5tester {
     Contact c = new Contact("Arthur Moddy", "est@temp.com", "703­555­5555");
     assertEquals("Arthur Moddy, email: est@temp.com, phone: 703­555­5555.",c.toString());
   }
+  @Test 
+  public void testGetName00() {
+    Contact c = new Contact("Arthur Moddy", "est@temp.com", "703­555­5555");
+    assertEquals("Arthur Moddy",c.getName());
+  }
+  @Test 
+  public void testGetEmail00() {
+    Contact c = new Contact("Arthur Moddy", "est@temp.com", "703­555­5555");
+    assertEquals("est@temp.com",c.getEmail());
+  }
+  @Test 
+  public void testGetPhone00() {
+    Contact c = new Contact("Arthur Moddy", "est@temp.com", "703­555­5555");
+    assertEquals("703­555­5555",c.getPhone());
+  }
   @Test
   public void testCompareTo(){
     Contact c = new Contact("Arthur Moddy", "est@temp.com", "703­555­5555");
@@ -34,6 +49,7 @@ public class P5tester {
     Contact d = new Contact("Arthur Moddy", "est@temp.com", "703­555­5555");
     assertTrue(c.compareTo(d)==0);
   }
+
   //Test phone book utils task
   @Test
   public void testMapToString(){
@@ -41,9 +57,16 @@ public class P5tester {
     map.put("x",1); map.put("y",2); map.put("z",3);
     assertEquals("1\n2\n3\n", PhoneBookUtils.mapToString(map));
   }
+  @Test
+  public void testMapToStringEmpty(){
+    Map<String, Integer> map = new HashMap<String, Integer>();
+    assertEquals("", PhoneBookUtils.mapToString(map));
+  }
 
   Integer[] ints = { 3, 8, 5, 4, 1, 9, -2};
   Integer[] intsSorted = {-2,1,3,4,5,8,9};
+  Integer[] emptyInts = {};
+  List<Integer> emptyList = new ArrayList<Integer>(Arrays.asList(emptyInts));
   List<Integer> intList = new ArrayList<Integer>(Arrays.asList(ints));
   String[] strs = { "Hhh", "Ccc", "Fff", "Ttt", "Aaa", "Ddd" };
   String[] strsSorted = {"Aaa", "Ccc", "Ddd", "Fff", "Hhh", "Ttt"};
@@ -53,10 +76,20 @@ public class P5tester {
   public void testListToSortedList0(){
     assertEquals("-2\n1\n3\n4\n5\n8\n9\n", PhoneBookUtils.listToSortedList(intList));
   }
+  @Test 
+  public void testListToSortedListEmpty(){
+    assertEquals("", PhoneBookUtils.listToSortedList(emptyList));
+  }
 
 @Test 
   public void testListToSortedList1(){
     assertEquals("Aaa\nCcc\nDdd\nFff\nHhh\nTtt\n", PhoneBookUtils.listToSortedList(strList));
+  }
+  @Test
+  public void testListToSortedList(){
+    String [] strArr = {"F", "B", "Eee", "Xve", "Aba"};
+    ArrayList<String> strList = new ArrayList<String>(Arrays.asList(strArr));
+    assertEquals("Aba\n"+"B\n"+"Eee\n"+"F\n"+"Xve\n",PhoneBookUtils.listToSortedList(strList));
   }
 
   @Test 
@@ -83,19 +116,12 @@ public class P5tester {
     assertEquals(expected, PhoneBookUtils.binarySearch(strsSorted, 0, strs.length, "Bebe"));
   }
 
-  @Test
-  public void testListToSortedList(){
-    String [] strArr = {"F", "B", "Eee", "Xve", "Aba"};
-    ArrayList<String> strList = new ArrayList<String>(Arrays.asList(strArr));
-    System.out.println(PhoneBookUtils.listToSortedList(strList));
-    assertEquals("Aba\n"+"B\n"+"Eee\n"+"F\n"+"Xve\n",PhoneBookUtils.listToSortedList(strList));
-  }
+  
 
   // Given tester cases for PhoneBook
   @Test 
   public void testAddContact0() {
     PhoneBook blackbook = new PhoneBook();
-    System.out.println(blackbook.getContactList());
     assertEquals("",blackbook.getContactList());
   }
   
@@ -105,14 +131,19 @@ public class P5tester {
     blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
     assertEquals("Lance Farmer, email: sem.egestas@urnanecluctus.ca, phone: 1-425-180-9073.\n",blackbook.getContactList());
   }
-  
+  @Test 
+  public void testAddContactFalse() {
+    PhoneBook blackbook = new PhoneBook();
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertFalse(blackbook.addContact("Lance Farmer", "", ""));
+  }
+
   
   @Test 
   public void testGetContactList() {
     PhoneBook blackbook = new PhoneBook();
     blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
     blackbook.addContact("Lawrence Garcia", "diam@amagna.ca", "1-665-672-6398");
-    System.out.println(blackbook.getContactList());
     String [] tempArr = blackbook.getContactList().split("\n");
 	Set<String> actualSet = new HashSet<String>(Arrays.asList(tempArr));
     Set<String> expectedSet = new HashSet<String>(Arrays.asList(new String[]{
@@ -122,12 +153,15 @@ public class P5tester {
 
 	assertEquals("loaded contacts do not match expected contents", expectedSet, actualSet);
     }
-  
+  @Test
+    public void testFileToMapBadName() {
+      PhoneBook blackbook = new PhoneBook(); 
+      assertFalse(blackbook.fileToMap("contac.txt"));
+    }
   @Test
   public void testFileToMap() {
     PhoneBook blackbook = new PhoneBook(); 
     blackbook.fileToMap("contacts.txt");
-    System.out.println(blackbook.getContactList());
     String [] tempArr = blackbook.getContactList().split("\n");
 	Set<String> actualSet = new HashSet<String>(Arrays.asList(tempArr));
     Set<String> expectedSet = new HashSet<String>(Arrays.asList(new String[]{
@@ -150,11 +184,17 @@ public class P5tester {
     // testing a method in the utility class
     String [] strArr = {"F", "B", "Eee", "Xve", "Aba"};
     ArrayList<String> strList = new ArrayList<String>(Arrays.asList(strArr));
-    System.out.println(PhoneBookUtils.listToSortedList(strList));
     assertEquals("Aba\n"+"B\n"+"Eee\n"+"F\n"+"Xve\n",PhoneBookUtils.listToSortedList(strList));
   }
 
-  
+  @Test 
+  public void testDeleteContact0() {
+    PhoneBook blackbook = new PhoneBook();
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.deleteContact("Bane Farmer");
+    assertEquals("Lance Farmer, email: sem.egestas@urnanecluctus.ca, phone: 1-425-180-9073.\n",blackbook.getContactList());
+  }
   @Test 
   public void testDelteContact1() {
     PhoneBook blackbook = new PhoneBook();
@@ -163,6 +203,15 @@ public class P5tester {
     blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
     blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
     assertTrue(blackbook.deleteContact("Lance Farmer"));
+  }
+  @Test 
+  public void testDelteContactFalse() {
+    PhoneBook blackbook = new PhoneBook();
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertFalse(blackbook.deleteContact("Lance Farme"));
   }
   @Test 
   public void testDelteContact2() {

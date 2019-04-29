@@ -7,6 +7,7 @@ public class PhoneBook implements Iterable<Contact> {
     private HashMap<String, Contact> contactHM;
 
     public PhoneBook() {
+        // create internal HashMap
         this.contactHM = new HashMap<String, Contact>();
     }
 
@@ -24,12 +25,13 @@ public class PhoneBook implements Iterable<Contact> {
             s.close();
             
             return true;
-        } catch (IOException e) {
+        } catch (IOException e) { // in case bad file 
             return false;
         }
     }
 
     public boolean addContact(String name, String email, String phone) {
+        // Add if name isn't in the map yet
         if (this.contactHM.containsKey(name.toLowerCase())) {
             return false;
         } else {
@@ -40,6 +42,7 @@ public class PhoneBook implements Iterable<Contact> {
     }
 
     public boolean deleteContact(String name) {
+        // Delete if key available in the map
         if (this.contactHM.containsKey(name.toLowerCase())) {
             this.contactHM.remove(name.toLowerCase());
             return true;
