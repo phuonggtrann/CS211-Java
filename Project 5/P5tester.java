@@ -16,6 +16,24 @@ public class P5tester {
     Contact c = new Contact("Arthur Moddy", "est@temp.com", "703­555­5555");
     assertEquals("Arthur Moddy, email: est@temp.com, phone: 703­555­5555.",c.toString());
   }
+  @Test
+  public void testCompareTo(){
+    Contact c = new Contact("Arthur Moddy", "est@temp.com", "703­555­5555");
+    Contact d = new Contact("Brthur Moddy", "est@temp.com", "703­555­5555");
+    assertTrue(c.compareTo(d)<0);
+  }
+  @Test
+  public void testCompareTo1(){
+    Contact c = new Contact("Arthur Moddy", "est@temp.com", "703­555­5555");
+    Contact d = new Contact("Brthur Moddy", "est@temp.com", "703­555­5555");
+    assertFalse(c.compareTo(d)>0);
+  }
+  @Test
+  public void testCompareTo2(){
+    Contact c = new Contact("Arthur Moddy", "est@temp.com", "703­555­5555");
+    Contact d = new Contact("Arthur Moddy", "est@temp.com", "703­555­5555");
+    assertTrue(c.compareTo(d)==0);
+  }
   //Test phone book utils task
   @Test
   public void testMapToString(){
@@ -64,7 +82,16 @@ public class P5tester {
     String expected = null;
     assertEquals(expected, PhoneBookUtils.binarySearch(strsSorted, 0, strs.length, "Bebe"));
   }
-  
+
+  @Test
+  public void testListToSortedList(){
+    String [] strArr = {"F", "B", "Eee", "Xve", "Aba"};
+    ArrayList<String> strList = new ArrayList<String>(Arrays.asList(strArr));
+    System.out.println(PhoneBookUtils.listToSortedList(strList));
+    assertEquals("Aba\n"+"B\n"+"Eee\n"+"F\n"+"Xve\n",PhoneBookUtils.listToSortedList(strList));
+  }
+
+  // Given tester cases for PhoneBook
   @Test 
   public void testAddContact0() {
     PhoneBook blackbook = new PhoneBook();
@@ -100,7 +127,7 @@ public class P5tester {
   public void testFileToMap() {
     PhoneBook blackbook = new PhoneBook(); 
     blackbook.fileToMap("contacts.txt");
-    //System.out.println(blackbook.getContactList());
+    System.out.println(blackbook.getContactList());
     String [] tempArr = blackbook.getContactList().split("\n");
 	Set<String> actualSet = new HashSet<String>(Arrays.asList(tempArr));
     Set<String> expectedSet = new HashSet<String>(Arrays.asList(new String[]{
@@ -123,10 +150,115 @@ public class P5tester {
     // testing a method in the utility class
     String [] strArr = {"F", "B", "Eee", "Xve", "Aba"};
     ArrayList<String> strList = new ArrayList<String>(Arrays.asList(strArr));
-    //System.out.println(PhoneBookUtils.listToSortedList(strList));
+    System.out.println(PhoneBookUtils.listToSortedList(strList));
     assertEquals("Aba\n"+"B\n"+"Eee\n"+"F\n"+"Xve\n",PhoneBookUtils.listToSortedList(strList));
   }
-   
-   
 
+  
+  @Test 
+  public void testDelteContact1() {
+    PhoneBook blackbook = new PhoneBook();
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertTrue(blackbook.deleteContact("Lance Farmer"));
+  }
+  @Test 
+  public void testDelteContact2() {
+    PhoneBook blackbook = new PhoneBook();
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertFalse(blackbook.deleteContact("Tane Farmer"));
+  }
+  @Test
+  public void testGetContactInfo() {
+    PhoneBook blackbook = new PhoneBook();
+    String s= "Lance Farmer, email: sem.egestas@urnanecluctus.ca, phone: 1-425-180-9073.";
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertEquals(s,blackbook.getContactInfo("Lance Farmer"));
+  }
+  @Test
+  public void testGetContactInfo1() {
+    PhoneBook blackbook = new PhoneBook();
+    String s= null;
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertEquals(s,blackbook.getContactInfo("Same Farmer"));
+  }
+  @Test
+  public void testGetEmail1() {
+    PhoneBook blackbook = new PhoneBook();
+    String s= "Lance Farmer: sem.egestas@urnanecluctus.ca";
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertEquals(s,blackbook.getEmail("Lance Farmer"));
+  }
+  @Test
+  public void testGetEmail2() {
+    PhoneBook blackbook = new PhoneBook();
+    String s= null;
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertEquals(s,blackbook.getEmail("Hance Farmer"));
+  }
+  @Test
+  public void testGetPhone1() {
+    PhoneBook blackbook = new PhoneBook();
+    String s= "Lance Farmer: 1-425-180-9073";
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertEquals(s,blackbook.getPhone("Lance Farmer"));
+  }
+  @Test
+  public void testGetPhone2() {
+    PhoneBook blackbook = new PhoneBook();
+    String s= null;
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertEquals(s,blackbook.getPhone("Hance Farmer"));
+  }
+  @Test
+  public void testUpdataEmail() {
+    PhoneBook blackbook = new PhoneBook();
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertTrue(blackbook.updateEmail("Lance Farmer","Test@test.com"));
+  }
+  @Test
+  public void testUpdataEmail2() {
+    PhoneBook blackbook = new PhoneBook();
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertFalse(blackbook.updateEmail("Hance Farmer","Test@test.com"));
+  }
+  @Test
+  public void testSearchContact(){
+    PhoneBook blackbook = new PhoneBook();
+    blackbook.addContact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Bane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Kane Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    blackbook.addContact("Xen Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    Contact c= new Contact("Lance Farmer", "sem.egestas@urnanecluctus.ca", "1-425-180-9073");
+    assertEquals("Lance Farmer, email: sem.egestas@urnanecluctus.ca, phone: 1-425-180-9073.", blackbook.searchContactList("Lance Farmer"));
+  }
 }

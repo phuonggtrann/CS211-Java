@@ -113,6 +113,7 @@ public class PhoneBook implements Iterable<Contact> {
     public String searchContactList(String name) {
         List<Contact> arrList = new ArrayList<Contact>(this.contactHM.values());
         Contact[] contact = new Contact[arrList.size()];
+        contact = arrList.toArray(contact);  //Load value in 
         Contact dummyContact = new Contact(name, "", "");
         return (PhoneBookUtils.binarySearch(contact, 0, contact.length, dummyContact)).toString();
     }
