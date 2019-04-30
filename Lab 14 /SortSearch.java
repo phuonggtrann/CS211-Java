@@ -1,11 +1,13 @@
 public class SortSearch {
     public static int findFirstDist(int[] array, int v, int d) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] >= (v - d) && array[i] <= (v - d)) {
-                return i;
+        int ans =-1; // initialize
+        for (int i = 0; i < array.length; i++) { // for loop
+            if (array[i] >= (v - d) && array[i] <= (v + d)) { // condition compare 
+                ans = i;
+                break;
             }
         }
-        return -1;
+        return ans;
     }
 
     public static void sortDist(int[] array, int v) {
@@ -15,18 +17,20 @@ public class SortSearch {
 
     // public helper method
     public static void insertionSort(int [] array, int i, int v){
-        if (i>array.length-1) {return;}
-        int temp = array[i];
-        int index = i;
-        int dist = Math.abs(temp-v);
+        if (i==array.length-1) {return;} // stop condition for sort algorithm
+        // initialize needed variable
+        int temp = array[i+1]; 
+        int index = i+1;
         while(index>0){
-          if (Math.abs(array[index-1])>temp){
+            if (Math.abs((array[index]-v)) < Math.abs((array[index-1]-v))) {
                 array[index]=array[index-1];
                 array[index-1]=temp;
-          }
-          index--;
+                
+            }
+            index--;
         }
-       insertionSort(array, i+1, v);   
+        insertionSort(array, i+1, v);
+          
     }
 
     public static int findKthFromV(int[] array, int k, int v) {
